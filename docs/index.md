@@ -19,7 +19,7 @@ Wayfire is a 3D [Wayland] compositor, inspired by [Compiz] and based on [wlroots
 
 It aims to create a customizable, extendable and lightweight environment without sacrificing its appearance.
 
-[![Wayfire demos](/tree/main/docs/images/FirstPage.png)](https://youtube.com/playlist?list=PLb7YRKEhWEBUIoT-a29UoJW9mhfzjpNle)
+[![Wayfire demos](images/FirstPage.png)](https://youtube.com/playlist?list=PLb7YRKEhWEBUIoT-a29UoJW9mhfzjpNle)
 :simple-youtube: [Wayfire demos](https://youtube.com/playlist?list=PLb7YRKEhWEBUIoT-a29UoJW9mhfzjpNle)
 
 [Wayland]: https://wayland.freedesktop.org
