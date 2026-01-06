@@ -526,9 +526,9 @@ Taking screenshots with [grim] and [slurp]:
 
 ``` ini
 [command]
-binding_screenshot = KEY_PRINT
+binding_screenshot = KEY_SYSRQ
 command_screenshot = grim $(date '+%F_%T').webp
-binding_screenshot_interactive = <shift> KEY_PRINT
+binding_screenshot_interactive = <shift> KEY_SYSRQ
 command_screenshot_interactive = slurp | grim -g - $(date '+%F_%T').webp
 ```
 You can also use `wl-clipboard` in combination with `grim` and `slurp` capture a screenshot to clipboard. Put this entry in `[command]` section.
