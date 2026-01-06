@@ -38,7 +38,7 @@
 
 ## Default key-bindings
 
-Here is an overview (non-exhaustive) of the key-bindings you can find in the [`wayfire.ini`] config file. A comprehensive reference of bindings available by default is available [Bindings available by default](Bindings-available-by-default.md).
+Here is an overview (non-exhaustive) of the key-bindings you can find in the [`wayfire.ini`] config file. A comprehensive reference of bindings available by default is available [Here](Bindings-available-by-default.md).
 
 [`wayfire.ini`]: https://github.com/WayfireWM/wayfire/blob/master/wayfire.ini
 
