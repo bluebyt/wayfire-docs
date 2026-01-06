@@ -2245,9 +2245,9 @@ Launch logout GUI <a href="https://github.com/ArtsyMacaw/wlogout">wlogout</a>:</
 <p>Taking screenshots with <a href="https://wayland.emersion.fr/grim/">grim</a> and <a href="https://wayland.emersion.fr/slurp/">slurp</a>:</p>
 <p><code>~/.config/wayfire.ini</code></p>
 <p><div class="highlight"><pre><span></span><code><span class="k">[command]</span>
-<span class="na">binding_screenshot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_PRINT</span>
+<span class="na">binding_screenshot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_SYSRQ</span>
 <span class="na">command_screenshot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">grim $(date &#39;+%F_%T&#39;).webp</span>
-<span class="na">binding_screenshot_interactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;shift&gt; KEY_PRINT</span>
+<span class="na">binding_screenshot_interactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;shift&gt; KEY_SYSRQ</span>
 <span class="na">command_screenshot_interactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">slurp | grim -g - $(date &#39;+%F_%T&#39;).webp</span>
 </code></pre></div>
 You can also use <code>wl-clipboard</code> in combination with <code>grim</code> and <code>slurp</code> capture a screenshot to clipboard. Put this entry in <code>[command]</code> section.
