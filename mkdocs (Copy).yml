@@ -18,19 +18,9 @@ theme:
     - navigation.expand
 
   palette:
-    - scheme: default
-      primary: blue
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-
     - scheme: slate
       primary: blue
       accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
 
 markdown_extensions:
   - admonition

@@ -1,0 +1,2348 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Configuration/">
+      
+      
+        <link rel="next" href="../Contributing/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Tutorial - Wayfire Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tutorial" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Wayfire Wiki" class="md-header__button md-logo" aria-label="Wayfire Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wayfire Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tutorial
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../General/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  General
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Configuration/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configuration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorial
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Contributing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tips-%26-Tricks/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tips & Tricks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../FAQ/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../IPC-for-developers/" class="md-tabs__link">
+          
+  
+  
+  For Developers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Bindings-available-by-default/" class="md-tabs__link">
+          
+  
+  
+  Advanced Topics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Wayfire Wiki" class="md-nav__button md-logo" aria-label="Wayfire Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wayfire Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../General/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-key-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default key-bindings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-wayfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Wayfire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Wayfire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-terminals-and-moving-around" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening terminals and moving around
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opening-other-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening other applications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closing windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizing-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resizing windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switching-between-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching between windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positioning-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positioning windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using workspaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-windows-to-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving windows to workspaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-opacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the opacity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reloading-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reloading the configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exiting-wayfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exiting Wayfire
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-wayfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Wayfire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Wayfire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-your-keyboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting your keyboard layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-launcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application launcher
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-wallpaper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the wallpaper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-panel-and-dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a panel and dock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-viewport-switcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring viewport switcher
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-your-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring your outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idle-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idle configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-locker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen locker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-screen-brightness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the screen brightness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-color-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen color temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taking screenshots
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-screencasts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating screencasts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatically-maximizing-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatically maximizing windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tips-%26-Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips & Tricks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Developers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    For Developers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IPC-for-developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IPC for developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugin-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../View-life-cycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    View life cycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Views%2C-Toplevels-and-Transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Views, Toplevels and Transactions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Scenegraph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenegraph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BWIP%5D-Design-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [WIP] Design overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BWIP%5D-What-does-a-compositor-do%3F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [WIP] What does a compositor do?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Bindings-available-by-default/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bindings available by default
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Debugging-problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debugging problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Additional-configuration-for-external-applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional configuration for external applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Localisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Project-goals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project goals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Related-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Related projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#default-key-bindings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default key-bindings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-wayfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Wayfire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Wayfire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-terminals-and-moving-around" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening terminals and moving around
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opening-other-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Opening other applications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closing windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizing-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resizing windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switching-between-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching between windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positioning-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Positioning windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using workspaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moving-windows-to-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving windows to workspaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-opacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the opacity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reloading-the-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reloading the configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exiting-wayfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exiting Wayfire
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-wayfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Wayfire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring Wayfire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-your-keyboard-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting your keyboard layout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-launcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application launcher
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-wallpaper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setting the wallpaper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-panel-and-dock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding a panel and dock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-viewport-switcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring viewport switcher
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-your-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring your outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notifications
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#idle-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Idle configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-locker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen locker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changing-the-screen-brightness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changing the screen brightness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-color-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen color temperature
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Taking screenshots
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-screencasts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating screencasts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatically-maximizing-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatically maximizing windows
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote desktop
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tutorial">Tutorial</h1>
+<p><strong>Table of contents</strong></p>
+<ul>
+<li><a href="#default-key-bindings">Default key-bindings</a></li>
+<li><a href="#using-wayfire">Using Wayfire</a></li>
+<li><a href="#opening-terminals-and-moving-around">Opening terminals and moving around</a></li>
+<li><a href="#opening-other-applications">Opening other applications</a></li>
+<li><a href="#closing-windows">Closing windows</a></li>
+<li><a href="#moving-windows">Moving windows</a></li>
+<li><a href="#resizing-windows">Resizing windows</a></li>
+<li><a href="#switching-between-windows">Switching between windows</a></li>
+<li><a href="#positioning-windows">Positioning windows</a></li>
+<li><a href="#using-workspaces">Using workspaces</a></li>
+<li><a href="#moving-windows-to-workspaces">Moving windows to workspaces</a></li>
+<li><a href="#changing-the-opacity">Changing the opacity</a></li>
+<li><a href="#reloading-the-configuration">Reloading the configuration</a></li>
+<li><a href="#exiting-wayfire">Exiting Wayfire</a></li>
+<li><a href="#configuring-wayfire">Configuring Wayfire</a></li>
+<li><a href="#setting-your-keyboard-layout">Setting your keyboard layout</a></li>
+<li><a href="#terminal">Terminal</a></li>
+<li><a href="#application-launcher">Application launcher</a></li>
+<li><a href="#setting-the-wallpaper">Setting the wallpaper</a></li>
+<li><a href="#adding-a-panel-and-dock">Adding a panel and dock</a></li>
+<li><a href="#configuring-viewport-switcher">Configuring viewport switcher</a></li>
+<li><a href="#configuring-your-outputs">Configuring your outputs</a></li>
+<li><a href="#notifications">Notifications</a></li>
+<li><a href="#idle-configuration">Idle configuration</a></li>
+<li><a href="#screen-locker">Screen locker</a></li>
+<li><a href="#logout">Logout</a></li>
+<li><a href="#changing-the-volume">Changing the volume</a></li>
+<li><a href="#changing-the-screen-brightness">Changing the screen brightness</a></li>
+<li><a href="#screen-color-temperature">Screen color temperature</a></li>
+<li><a href="#taking-screenshots">Taking screenshots</a></li>
+<li><a href="#creating-screencasts">Creating screencasts</a></li>
+<li><a href="#automatically-maximizing-windows">Automatically maximizing windows</a></li>
+<li><a href="#remote-desktop">Remote desktop</a></li>
+</ul>
+<h2 id="default-key-bindings">Default key-bindings</h2>
+<p>Here is an overview (non-exhaustive) of the key-bindings you can find in the [<code>wayfire.ini</code>] config file. A comprehensive reference of bindings available by default is available <a href="../Bindings-available-by-default/">Here</a>.</p>
+<ul>
+<li><kbd>Super</kbd> + <kbd>e</kbd> ⇒ Overview all workspaces.</li>
+<li>[<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd><kbd>Enter</kbd><kbd>Home</kbd><kbd>End</kbd>] ⇒ Switch to the specified workspace; add <kbd>Shift</kbd> for bottom.</li>
+<li><kbd>Super</kbd> + <kbd>Enter</kbd> ⇒ Open a terminal (<a href="https://github.com/alacritty/alacritty">Alacritty</a>).</li>
+<li><kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> ⇒ Open the launcher (<a href="https://hg.sr.ht/~scoopta/wofi">Wofi</a>).</li>
+<li><kbd>Super</kbd> + <kbd>w</kbd> ⇒ Close window.</li>
+<li><kbd>Super</kbd> + <kbd>Tab</kbd> ⇒ Preview windows and select the next window; add <kbd>Shift</kbd> for previous.</li>
+<li><kbd>Alt</kbd> + <kbd>Escape</kbd> ⇒ Select the next window.</li>
+<li><kbd>Super</kbd> + [<kbd>Up</kbd><kbd>Down</kbd><kbd>Left</kbd><kbd>Right</kbd><kbd>Home</kbd><kbd>End</kbd><kbd>f</kbd><kbd>d</kbd>] ⇒ Arrange window into a grid; add <kbd>Shift</kbd> for bottom.</li>
+<li><kbd>Super</kbd> + [<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>] ⇒ Switch to adjacent workspace; add <kbd>Shift</kbd> to move with the focused window.</li>
+<li><kbd>Super</kbd> + <kbd>Control</kbd> + [<kbd>h</kbd><kbd>l</kbd>] ⇒ Switch to the previous or next workspace, by using the cube.</li>
+<li><kbd>Super</kbd> + <kbd>o</kbd> ⇒ Move focus to the next output; add <kbd>Shift</kbd> to move with the focused window.</li>
+</ul>
+<p><strong>Note</strong> that you probably need to adapt the applications, such as the <em>terminal</em> and <em>launcher</em>, in your config file.</p>
+<h2 id="using-wayfire">Using Wayfire</h2>
+<h3 id="opening-terminals-and-moving-around">Opening terminals and moving around</h3>
+<p>One very basic operation is opening a new terminal.
+By pressing <kbd>Super</kbd> + <kbd>Enter</kbd>, a new terminal will be opened.
+By default, the key-binding opens <a href="https://github.com/alacritty/alacritty">Alacritty</a>.</p>
+<p><img alt="open-terminal" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/open-terminal/2020-02-18_17:31:03.gif" /></p>
+<h3 id="opening-other-applications">Opening other applications</h3>
+<p>Aside from opening applications from a terminal, you can also use the handy <a href="https://hg.sr.ht/~scoopta/wofi">Wofi</a> which is opened by pressing <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> by default.</p>
+<p><img alt="open-applications" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/open-applications/2020-02-18_17:39:34.gif" /></p>
+<p>Additionally, if you have applications you open very frequently, you can create a key-binding for starting the application directly.
+See the section <a href="#configuring-wayfire">Configuring Wayfire</a> for details.</p>
+<h3 id="closing-windows">Closing windows</h3>
+<p>If an application does not provide a mechanism for closing (most applications provide a menu, the middle mouse button for tabs, the escape key or a shortcut like <kbd>Control</kbd> + <kbd>w</kbd> to close), you can press <kbd>Super</kbd> + <kbd>w</kbd>, <kbd>Super</kbd> and middle mouse button or <kbd>Alt</kbd> + <kbd>F4</kbd> to close a window.</p>
+<p><img alt="close-window" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/close-window/2020-02-18_17:41:03.gif" /></p>
+<h3 id="moving-windows">Moving windows</h3>
+<p>By dragging the window’s title bar with your mouse you can move the window around.
+You can also drag windows by holding down <kbd>Super</kbd> and left mouse button.</p>
+<p><img alt="drag-window" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/drag-window/2020-02-18_16:49:54.gif" /></p>
+<h3 id="resizing-windows">Resizing windows</h3>
+<p>By grabbing the borders and moving them you can resize the window.
+You can also do that by holding down <kbd>Super</kbd> and right mouse button.</p>
+<p><img alt="resize-window" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/resize-window/2020-02-18_17:44:25.gif" /></p>
+<h3 id="switching-between-windows">Switching between windows</h3>
+<p>By pressing <kbd>Super</kbd> + <kbd>Tab</kbd>, you can preview the windows in the current workspace and select the next window; add <kbd>Shift</kbd> for previous.
+To switch without animation, press <kbd>Alt</kbd> + <kbd>Escape</kbd>.</p>
+<p><img alt="switch-between-windows" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/switch-between-windows/2020-02-18_17:24:41.gif" /></p>
+<h3 id="positioning-windows">Positioning windows</h3>
+<p>Press <kbd>Super</kbd> and the arrow keys for arranging windows into a grid of 2 cells.
+Press <kbd>Super</kbd> + [<kbd>Home</kbd><kbd>End</kbd>] for arranging windows into a grid of 4 cells; add <kbd>Shift</kbd> for bottom.
+Press <kbd>Super</kbd> + <kbd>f</kbd> to position the window in the center of the screen.
+Press <kbd>Super</kbd> + <kbd>d</kbd> to restore the window to its original size and position.
+You can also use the keypad, which is laid out exactly to match the slots.</p>
+<p><img alt="grid" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/grid/2020-02-18_16:21:37.gif" /></p>
+<h3 id="using-workspaces">Using workspaces</h3>
+<p>Workspaces are an easy way to group a set of windows.
+Wayfire allows you to arrange your workspaces spatially, rather than linearly.
+By default, there is 9 – 3 horizontal and 3 vertical – workspaces, and you are on the first workspace.</p>
+<p>To switch to another workspace, press <kbd>Super</kbd> + <a href="https://en.wikipedia.org/wiki/Arrow_keys#HJKL_keys">HJKL</a>; add <kbd>Shift</kbd> to move with the focused window.</p>
+<p><img alt="switch-to-workspace" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/switch-to-workspace/2020-02-18_17:59:00.gif" /></p>
+<p>You can also use the cube, by holding <kbd>Super</kbd> + <kbd>Shift</kbd> and left mouse button,
+or via the keyboard with <kbd>Super</kbd> + <kbd>Control</kbd> + [<kbd>h</kbd><kbd>l</kbd>].</p>
+<p><img alt="cube" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/cube/2020-02-18_18:23:53.gif" /></p>
+<p>Pressing <kbd>Super</kbd> allows you to preview all workspaces in the current output.
+You can use your mouse to select a workspace.
+<a href="https://en.wikipedia.org/wiki/Arrow_keys#HJKL_keys">HJKL</a>, <kbd>Enter</kbd>, <kbd>Home</kbd> and <kbd>End</kbd> can be used to select a workspace with your keyboard; add <kbd>Shift</kbd> for bottom.</p>
+<p><img alt="expo" src="https://github.com/alexherbo2/wayfire-resources/raw/master/demos/expo/2020-02-18_18:43:52.gif" /></p>
+<h3 id="moving-windows-to-workspaces">Moving windows to workspaces</h3>
+<p>To move a window to another workspace, simply press <kbd>Super</kbd> + <kbd>Shift</kbd> + <a href="https://en.wikipedia.org/wiki/Arrow_keys#HJKL_keys">HJKL</a>.</p>
+<h3 id="changing-the-opacity">Changing the opacity</h3>
+<p>When the modifier key <kbd>Super</kbd> + <kbd>Alt</kbd> is held down, you can scroll down and up to adjust the opacity of the window.</p>
+<h3 id="reloading-the-configuration">Reloading the configuration</h3>
+<p>To reload the configuration, simply save the config file.
+Most of the options are automatically reloaded.</p>
+<h3 id="exiting-wayfire">Exiting Wayfire</h3>
+<p>Press <kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd>.</p>
+<p><strong>TODO</strong>: Add a configuration option.</p>
+<h2 id="configuring-wayfire">Configuring Wayfire</h2>
+<p>To change the configuration of Wayfire, copy [<code>wayfire.ini</code>] to <code>~/.config/wayfire.ini</code> and edit it with a text editor.
+For a complete reference, see the <a href="../Configuration/">Configuration</a> document.</p>
+<h3 id="setting-your-keyboard-layout">Setting your keyboard layout</h3>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[input]</span>
+<span class="na">xkb_layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">us,fr</span>
+<span class="na">xkb_variant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">dvorak,bepo</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#input">Input</a> for more information.</p>
+<h3 id="terminal">Terminal</h3>
+<p>Open <a href="https://github.com/alacritty/alacritty">Alacritty</a>, <a href="https://sw.kovidgoyal.net/kitty/">kitty</a> or another terminal:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">binding_terminal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_ENTER</span>
+<span class="na">command_terminal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">alacritty</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#command">Command</a> for more information.</p>
+<h3 id="application-launcher">Application launcher</h3>
+<p><strong>Example</strong> – Run <a href="https://hg.sr.ht/~scoopta/wofi">Wofi</a>, a graphical launcher, similar to <a href="https://tools.suckless.org/dmenu/">dmenu</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">binding_launcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; &lt;shift&gt; KEY_ENTER</span>
+<span class="na">command_launcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wofi</span>
+</code></pre></div>
+<p><strong>Note</strong>: Add <code>mode=run</code> or <code>mode=drun</code> to <code>~/.config/wofi/config</code>.
+You can also specify the mode with <code>--show</code> option.</p>
+<p>You might prefer <a href="https://github.com/junegunn/fzf">fzf</a> running in a terminal.</p>
+<p><strong>Example</strong> – Run <a href="https://github.com/alexherbo2/launcher">Launcher</a> with <a href="https://github.com/junegunn/fzf">fzf</a> and <a href="https://github.com/alacritty/alacritty">Alacritty</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">binding_launcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; &lt;shift&gt; KEY_ENTER</span>
+<span class="na">command_launcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">alacritty --command sh -c &#39;nohup launcher-run $(launcher-list | fzf) &gt; /dev/null&#39;</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#command">Command</a> for more information.</p>
+<h3 id="setting-the-wallpaper">Setting the wallpaper</h3>
+<p>You can use <code>wf-background</code>, provided by <a href="https://github.com/WayfireWM/wf-shell">wf-shell</a>.</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[autostart]</span>
+<span class="na">background</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wf-background</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#autostart">Autostart</a> for more information.</p>
+<p>If you prefer <a href="https://github.com/swaywm/swaybg">swaybg</a>, adapt the command as follows.</p>
+<p><strong>Example</strong> – Simple:</p>
+<div class="highlight"><pre><span></span><code>swaybg<span class="w"> </span>--image<span class="w"> </span>/path/to/wallpaper.webp
+</code></pre></div>
+<p><strong>Example</strong> – Random wallpaper:</p>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>-L<span class="w"> </span>/path/to/wallpapers<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-R<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>swaybg<span class="w"> </span>--image
+</code></pre></div>
+<h3 id="adding-a-panel-and-dock">Adding a panel and dock</h3>
+<p>You can use <code>wf-panel</code> and <code>wf-dock</code>, provided by <a href="https://github.com/WayfireWM/wf-shell">wf-shell</a>.</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[autostart]</span>
+<span class="na">panel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wf-panel</span>
+<span class="na">dock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wf-dock</span>
+</code></pre></div>
+<p>You can also use <a href="https://github.com/Alexays/Waybar">Waybar</a> if you prefer it.</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[autostart]</span>
+<span class="na">bar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">waybar</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#autostart">Autostart</a> for more information.</p>
+<h3 id="configuring-viewport-switcher">Configuring viewport switcher</h3>
+<p>See <a href="https://github.com/WayfireWM/wayfire/wiki/Configuration.md#viewport-switcher">Viewport switcher</a> for more information.</p>
+<p>If you want to switch to another workspace by pressing super+num where num is the number of the workspace you want to use.</p>
+<p>Follow the example below.</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[vswitch]</span>
+<span class="na">binding_0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_0</span>
+<span class="na">binding_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_1</span>
+<span class="na">binding_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_2</span>
+<span class="na">binding_3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_3</span>
+<span class="na">binding_4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_4</span>
+<span class="na">binding_5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_5</span>
+<span class="na">binding_6</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_6</span>
+<span class="na">binding_7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_7</span>
+<span class="na">binding_8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_8</span>
+<span class="na">binding_9</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_9</span>
+</code></pre></div>
+<h3 id="configuring-your-outputs">Configuring your outputs</h3>
+<p>See <a href="https://github.com/WayfireWM/wayfire/wiki/Configuration.md#output">Output</a> for more information, setting mirroring, custom modes, etc.</p>
+<p>Example configuration statically via Wayfire:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[eDP-1]</span>
+<span class="na">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1920x1080@60.000000</span><span class="w"> </span><span class="c1"># or just 1920x1080</span>
+<span class="na">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">0,0</span>
+<span class="na">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">normal</span>
+<span class="na">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1.000000</span>
+</code></pre></div>
+<p><a href="https://wayland.emersion.fr/kanshi/">Kanshi</a> supports more dynamic configuration, like switching profiles based on connected outputs:</p>
+<p><code>~/.config/kanshi/config</code></p>
+<div class="highlight"><pre><span></span><code>{
+  output eDP-1 mode 1920x1080 position 0,0
+}
+{
+  output eDP-1 mode 1920x1080 position 0,900
+  output HDMI-A-1 mode 1440x900 position 0,0
+}
+</code></pre></div>
+<p>You can get the names of your outputs with <a href="https://github.com/emersion/wlr-randr">wlr-randr</a>, or by inspecting the log of Wayfire (printed to stdout by default).</p>
+<p>And start <a href="https://wayland.emersion.fr/kanshi/">kanshi</a> on startup with <a href="../Configuration/#autostart">Autostart</a>.</p>
+<h3 id="notifications">Notifications</h3>
+<p>Using <a href="https://wayland.emersion.fr/mako/">mako</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[autostart]</span>
+<span class="na">notifications</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">mako</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#autostart">Autostart</a> for more information.</p>
+<h3 id="idle-configuration">Idle configuration</h3>
+<p>Example configuration with <a href="https://github.com/swaywm/swayidle">swayidle</a> and <a href="https://github.com/swaywm/swaylock">swaylock</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[autostart]</span>
+<span class="na">idle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">swayidle before-sleep swaylock</span>
+
+<span class="k">[idle]</span>
+<span class="na">toggle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_Z</span>
+<span class="na">screensaver_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">300</span>
+<span class="na">dpms_timeout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">600</span>
+</code></pre></div>
+<ul>
+<li>Disables the compositor going idle with <kbd>Super</kbd> + <kbd>z</kbd>.</li>
+<li>This will lock your screen after 300 seconds of inactivity, then turn off
+your displays after another 300 seconds.</li>
+</ul>
+<p>See <a href="../Configuration/#autostart">Autostart</a> and <a href="../Configuration/#idle">Idle</a> for more information.</p>
+<p>Note: for now <a href="https://github.com/WayfireWM/wayfire/issues/455#issuecomment-630125354">there is a trick</a> for binding a key to instantly turn-off the screen (DPMS).</p>
+<h3 id="screen-locker">Screen locker</h3>
+<p>Lock your screen with <a href="https://github.com/swaywm/swaylock">swaylock</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">binding_lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; KEY_ESC</span>
+<span class="na">command_lock</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">swaylock</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#command">Command</a> for more information.</p>
+<h3 id="logout">Logout</h3>
+<p>Use <a href="https://github.com/soreau/wayland-logout">wayland-logout</a> to kill the current compositor instance.
+Launch logout GUI <a href="https://github.com/ArtsyMacaw/wlogout">wlogout</a>:</p>
+<p><code>~/.config/wf-shell.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[panel]</span>
+<span class="na">menu_logout_command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wlogout</span>
+</code></pre></div>
+<h3 id="changing-the-volume">Changing the volume</h3>
+<p><strong>Example</strong> – Changing the volume with <a href="https://alsa-project.org">ALSA</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">repeatable_binding_volume_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_VOLUMEUP</span>
+<span class="na">command_volume_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">amixer set Master 5%+</span>
+<span class="na">repeatable_binding_volume_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_VOLUMEDOWN</span>
+<span class="na">command_volume_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">amixer set Master 5%-</span>
+<span class="na">binding_mute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_MUTE</span>
+<span class="na">command_mute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">amixer set Master toggle</span>
+</code></pre></div>
+<p><strong>Example</strong> – Changing the volume with <a href="https://freedesktop.org/wiki/Software/PulseAudio/">PulseAudio</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">repeatable_binding_volume_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_VOLUMEUP</span>
+<span class="na">command_volume_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pactl set-sink-volume 0 +5%</span>
+<span class="na">repeatable_binding_volume_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_VOLUMEDOWN</span>
+<span class="na">command_volume_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pactl set-sink-volume 0 -5%</span>
+<span class="na">binding_mute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_MUTE</span>
+<span class="na">command_mute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">pactl set-sink-mute 0 toggle</span>
+</code></pre></div>
+<p><strong>Example</strong> – Changing the volume with <a href="https://pipewire.pages.freedesktop.org/wireplumber/">WirePlumber</a> for <a href="https://pipewire.org/">PipeWire</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">repeatable_binding_volume_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_VOLUMEUP</span>
+<span class="na">command_volume_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+</span>
+<span class="na">repeatable_binding_volume_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_VOLUMEDOWN</span>
+<span class="na">command_volume_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-</span>
+<span class="na">binding_mute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_MUTE</span>
+<span class="na">command_mute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle</span>
+</code></pre></div>
+<p>See <a href="../Configuration/#command">Command</a> for more information.</p>
+<h3 id="changing-the-screen-brightness">Changing the screen brightness</h3>
+<p><strong>Example</strong> – Changing the screen brightness with <a href="https://haikarainen.github.io/light/">Light</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">repeatable_binding_light_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_BRIGHTNESSUP</span>
+<span class="na">command_light_up</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">light -A 5</span>
+<span class="na">repeatable_binding_light_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_BRIGHTNESSDOWN</span>
+<span class="na">command_light_down</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">light -U 5</span>
+</code></pre></div>
+<p><strong>Note</strong>: Make sure that the user is part of the <code>video</code> group, otherwise you will not get access to the devices.</p>
+<p>See <a href="../Configuration/#command">Command</a> for more information.</p>
+<h3 id="screen-color-temperature">Screen color temperature</h3>
+<p>Adjust the color temperature of your screen with <a href="http://jonls.dk/redshift/">Redshift</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[autostart]</span>
+<span class="na">redshift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">redshift -m wayland</span>
+</code></pre></div>
+<p><strong>Note</strong>: Requires <a href="https://github.com/jonls/redshift/pull/663">Redshift with Wayland support</a>.</p>
+<p>See <a href="../Configuration/#autostart">Autostart</a> for more information.</p>
+<h3 id="taking-screenshots">Taking screenshots</h3>
+<p>Taking screenshots with <a href="https://wayland.emersion.fr/grim/">grim</a> and <a href="https://wayland.emersion.fr/slurp/">slurp</a>:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<p><div class="highlight"><pre><span></span><code><span class="k">[command]</span>
+<span class="na">binding_screenshot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">KEY_SYSRQ</span>
+<span class="na">command_screenshot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">grim $(date &#39;+%F_%T&#39;).webp</span>
+<span class="na">binding_screenshot_interactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;shift&gt; KEY_SYSRQ</span>
+<span class="na">command_screenshot_interactive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">slurp | grim -g - $(date &#39;+%F_%T&#39;).webp</span>
+</code></pre></div>
+You can also use <code>wl-clipboard</code> in combination with <code>grim</code> and <code>slurp</code> capture a screenshot to clipboard. Put this entry in <code>[command]</code> section.
+<div class="highlight"><pre><span></span><code><span class="na">binding_screenshot_clip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&lt;super&gt; &lt;ctrl&gt; KEY_S</span>
+<span class="na">command_screenshot_clip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">grim -g \&quot;$(slurp)&quot; - | wl-copy</span>
+</code></pre></div></p>
+<p>See <a href="../Configuration/#command">Command</a> for more information.</p>
+<h3 id="creating-screencasts">Creating screencasts</h3>
+<p>See <a href="https://github.com/ammen99/wf-recorder">wf-recorder</a> and <a href="https://hg.sr.ht/~scoopta/wlrobs">wlrobs</a>.</p>
+<h3 id="automatically-maximizing-windows">Automatically maximizing windows</h3>
+<p>You can maximize specific windows by default with the following command:</p>
+<p><code>~/.config/wayfire.ini</code></p>
+<div class="highlight"><pre><span></span><code><span class="k">[window-rules]</span>
+<span class="na">alacritty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">on created if app_id is &quot;Alacritty&quot; then maximize</span>
+</code></pre></div>
+<p>You can get the properties of your applications with the following command:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">WAYLAND_DEBUG</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>alacritty<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>kak
+</code></pre></div>
+See <a href="../Configuration/#window-rules">Window rules</a> for more information.</p>
+<h3 id="remote-desktop">Remote desktop</h3>
+<p>With virtual pointer support, programs like <a href="https://github.com/any1/wayvnc">wayvnc</a> are possible. No special wayfire configuration is required.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.tracking", "navigation.expand"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>

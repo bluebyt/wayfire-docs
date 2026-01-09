@@ -1,0 +1,1925 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../%5BWIP%5D-What-does-a-compositor-do%3F/">
+      
+      
+        <link rel="next" href="../Debugging-problems/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Bindings available by default - Wayfire Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bindings-available-by-default" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Wayfire Wiki" class="md-header__button md-logo" aria-label="Wayfire Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Wayfire Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bindings available by default
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../General/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  General
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Configuration/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configuration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tutorial/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tutorial
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Contributing/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contributing
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tips-%26-Tricks/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tips & Tricks
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../FAQ/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../IPC-for-developers/" class="md-tabs__link">
+          
+  
+  
+  For Developers
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Advanced Topics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Wayfire Wiki" class="md-nav__button md-logo" aria-label="Wayfire Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Wayfire Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../General/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tips-%26-Tricks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tips & Tricks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FAQ/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    For Developers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    For Developers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IPC-for-developers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IPC for developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plugin-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugin architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../View-life-cycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    View life cycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Views%2C-Toplevels-and-Transactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Views, Toplevels and Transactions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Scenegraph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scenegraph
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rendering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BWIP%5D-Design-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [WIP] Design overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%5BWIP%5D-What-does-a-compositor-do%3F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    [WIP] What does a compositor do?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bindings available by default
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bindings available by default
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#close-focused-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Close focused window.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-window-with-mouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focus window with mouse.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-opacity-by-scrolling-with-super-alt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change opacity by scrolling with Super + Alt.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-the-current-workspace-row-as-a-cube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show the current workspace row as a cube.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-an-overview-of-all-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show an overview of all workspaces.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Select a workspace.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-active-window-switcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple active window switcher.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fisheye-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fisheye effect.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invert-the-colors-of-the-whole-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invert the colors of the whole output.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-windows-by-holding-down-super-and-left-mouse-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag windows by holding down Super and left mouse button
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-focused-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change focused output.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resize-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resize window.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toggle scaling.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sway-inspired-tiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sway-inspired tiling.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-active-window-with-an-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change active window with an animation.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch to workspace.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotate-windows-with-the-mouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rotate windows with the mouse.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoom-in-the-desktop-by-scrolling-super" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoom in the desktop by scrolling + Super.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Debugging-problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debugging problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Additional-configuration-for-external-applications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Additional configuration for external applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Localisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Project-goals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project goals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Related-projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Related projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#close-focused-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Close focused window.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focus-window-with-mouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focus window with mouse.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plugins
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Plugins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-opacity-by-scrolling-with-super-alt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change opacity by scrolling with Super + Alt.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-the-current-workspace-row-as-a-cube" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show the current workspace row as a cube.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-an-overview-of-all-workspaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Show an overview of all workspaces.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-a-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Select a workspace.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-active-window-switcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple active window switcher.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fisheye-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fisheye effect.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grid.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invert-the-colors-of-the-whole-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invert the colors of the whole output.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-windows-by-holding-down-super-and-left-mouse-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drag windows by holding down Super and left mouse button
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-focused-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change focused output.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resize-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resize window.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toggle-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Toggle scaling.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sway-inspired-tiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sway-inspired tiling.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-active-window-with-an-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change active window with an animation.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-to-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switch to workspace.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotate-windows-with-the-mouse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rotate windows with the mouse.
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zoom-in-the-desktop-by-scrolling-super" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zoom in the desktop by scrolling + Super.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bindings-available-by-default">Bindings available by default</h1>
+<p>The following bindings are available by default in 0.8.0, i.e. without needing to specify them in <code>wayfire.ini</code>. Capital-letter representations of alphabetical keys are used for clarity; use of <kbd>&lt;shift&gt;</kbd> is not implied nor required.</p>
+<h2 id="core">Core</h2>
+<h3 id="close-focused-window">Close focused window.</h3>
+<ul>
+<li><code>core.close_top_view</code> = <kbd>&lt;super&gt;</kbd> + <kbd>Q</kbd> | <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;f4&gt;</kbd></li>
+</ul>
+<h3 id="focus-window-with-mouse">Focus window with mouse.</h3>
+<ul>
+<li><code>core.focus_buttons</code> = <kbd>&lt;mouse-left&gt;</kbd> | <kbd>&lt;mouse-middle&gt;</kbd> | <kbd>&lt;mouse-right&gt;</kbd></li>
+</ul>
+<h2 id="plugins">Plugins</h2>
+<p>The following bindings become available by default once the relevant plugin is enabled in <code>wayfire.ini</code>.</p>
+<h3 id="change-opacity-by-scrolling-with-super-alt">Change opacity by scrolling with Super + Alt.</h3>
+<ul>
+<li><code>alpha.modifier</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;alt&gt;</kbd></li>
+</ul>
+<h3 id="show-the-current-workspace-row-as-a-cube">Show the current workspace row as a cube.</h3>
+<ul>
+<li><code>cube.activate</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+</ul>
+<h3 id="show-an-overview-of-all-workspaces">Show an overview of all workspaces.</h3>
+<ul>
+<li><code>expo.toggle</code> = <kbd>&lt;super&gt;</kbd></li>
+</ul>
+<h3 id="select-a-workspace">Select a workspace.</h3>
+<p>Workspaces are arranged into a grid of 3 × 3. The numbering is left to right, line by line:</p>
+<div class="highlight"><pre><span></span><code>⇱ k ⇲
+h ⏎ l
+⇱ j ⇲
+</code></pre></div>
+<p>See <code>core.vwidth</code> and <code>core.vheight</code> for configuring the grid.</p>
+<ul>
+<li><code>expo.select_workspace_1</code> = <kbd>1</kbd></li>
+<li><code>expo.select_workspace_2</code> = <kbd>2</kbd></li>
+<li><code>expo.select_workspace_3</code> = <kbd>3</kbd></li>
+<li><code>expo.select_workspace_4</code> = <kbd>4</kbd></li>
+<li><code>expo.select_workspace_5</code> = <kbd>5</kbd></li>
+<li><code>expo.select_workspace_6</code> = <kbd>6</kbd></li>
+<li><code>expo.select_workspace_7</code> = <kbd>7</kbd></li>
+<li><code>expo.select_workspace_8</code> = <kbd>8</kbd></li>
+<li><code>expo.select_workspace_9</code> = <kbd>9</kbd></li>
+</ul>
+<h3 id="simple-active-window-switcher">Simple active window switcher.</h3>
+<ul>
+<li><code>fast-switcher.activate</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;esc&gt;</kbd></li>
+<li><code>fast-switcher.activate_backward</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;esc&gt;</kbd></li>
+</ul>
+<h3 id="fisheye-effect">Fisheye effect.</h3>
+<ul>
+<li><code>fisheye.toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;ctrl&gt;</kbd> + <kbd>F</kbd></li>
+</ul>
+<h3 id="grid">Grid.</h3>
+<p>Position the windows in certain regions of the output:</p>
+<div class="highlight"><pre><span></span><code>⇱ ↑ ⇲   │ 7 8 9
+← f →   │ 4 5 6
+⇱ ↓ ⇲ d │ 1 2 3 0
+</code></pre></div>
+<ul>
+<li><code>grid.slot_bl</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp1&gt;</kbd></li>
+<li><code>grid.slot_b</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp2&gt;</kbd></li>
+<li><code>grid.slot_br</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp3&gt;</kbd></li>
+<li><code>grid.slot_l</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;left&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp4&gt;</kbd></li>
+<li><code>grid.slot_c</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;up&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp5&gt;</kbd></li>
+<li><code>grid.slot_r</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;down&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp6&gt;</kbd></li>
+<li><code>grid.slot_tl</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp7&gt;</kbd></li>
+<li><code>grid.slot_t</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp8&gt;</kbd></li>
+<li><code>grid.slot_tr</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp9&gt;</kbd></li>
+</ul>
+<p>Restore default.</p>
+<ul>
+<li><code>grid.restore</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;down&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp0&gt;</kbd></li>
+</ul>
+<h3 id="invert-the-colors-of-the-whole-output">Invert the colors of the whole output.</h3>
+<ul>
+<li><code>invert.toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>I</kbd></li>
+</ul>
+<h3 id="drag-windows-by-holding-down-super-and-left-mouse-button">Drag windows by holding down Super and left mouse button</h3>
+<ul>
+<li><code>move.activate</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+</ul>
+<h3 id="change-focused-output">Change focused output.</h3>
+<p>Switch to the next output.</p>
+<ul>
+<li><code>oswitch.next_output</code> = <kbd>&lt;super&gt;</kbd> + <kbd>O</kbd></li>
+</ul>
+<p>Same with the window.</p>
+<ul>
+<li><code>oswitch.next_output_with_win</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>O</kbd></li>
+</ul>
+<h3 id="resize-window">Resize window.</h3>
+<ul>
+<li><code>resize.activate</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+</ul>
+<h3 id="toggle-scaling">Toggle scaling.</h3>
+<ul>
+<li><code>scale.toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>P</kbd></li>
+</ul>
+<h3 id="sway-inspired-tiling">Sway-inspired tiling.</h3>
+<p>Toggle tiling mode.</p>
+<ul>
+<li><code>simple-tile.key_toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>T</kbd></li>
+</ul>
+<p>Move window.</p>
+<ul>
+<li><code>simple-tile.button_move</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+</ul>
+<p>Resize window.</p>
+<ul>
+<li><code>simple-tile.button_resize</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-right&gt;</kbd></li>
+</ul>
+<p>Move focus to window on left.</p>
+<ul>
+<li><code>simple-tile.key_focus_left</code> = <kbd>&lt;super&gt;</kbd> + <kbd>H</kbd></li>
+</ul>
+<p>Move focus to window on right.</p>
+<ul>
+<li><code>simple-tile.key_focus_right</code> = <kbd>&lt;super&gt;</kbd> + <kbd>L</kbd></li>
+</ul>
+<p>Move focus to window above.</p>
+<ul>
+<li><code>simple-tile.key_focus_above</code> = <kbd>&lt;super&gt;</kbd> + <kbd>K</kbd></li>
+</ul>
+<p>Move focus to window below.</p>
+<ul>
+<li><code>simple-tile.key_focus_below</code> = <kbd>&lt;super&gt;</kbd> + <kbd>J</kbd></li>
+</ul>
+<h3 id="change-active-window-with-an-animation">Change active window with an animation.</h3>
+<ul>
+<li><code>switcher.next_view</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;tab&gt;</kbd></li>
+<li><code>switcher.prev_view</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;tab&gt;</kbd></li>
+</ul>
+<h3 id="switch-to-workspace">Switch to workspace.</h3>
+<ul>
+<li><code>vswitch.binding_left</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;left&gt;</kbd></li>
+<li><code>vswitch.binding_down</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;down&gt;</kbd></li>
+<li><code>vswitch.binding_up</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;up&gt;</kbd></li>
+<li><code>vswitch.binding_right</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;right&gt;</kbd></li>
+</ul>
+<p>Move the focused window with the same key-bindings as above, but with Shift.</p>
+<ul>
+<li><code>vswitch.with_win_left</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;left&gt;</kbd></li>
+<li><code>vswitch.with_win_down</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;down&gt;</kbd></li>
+<li><code>vswitch.with_win_up</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;up&gt;</kbd></li>
+<li><code>vswitch.with_win_right</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;right&gt;</kbd></li>
+</ul>
+<h3 id="rotate-windows-with-the-mouse">Rotate windows with the mouse.</h3>
+<p>2D rotation.</p>
+<ul>
+<li><code>wrot.activate</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;mouse-right&gt;</kbd></li>
+</ul>
+<p>3D rotation.</p>
+<ul>
+<li><code>wrot.activate-3d</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;mouse-right&gt;</kbd></li>
+</ul>
+<p>Remove rotation of current view.</p>
+<ul>
+<li><code>wrot.reset-one</code> = <kbd>&lt;super&gt;</kbd> + <kbd>R</kbd></li>
+</ul>
+<p>Remove rotation of all views.</p>
+<ul>
+<li><code>wrot.reset</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;ctrl&gt;</kbd> + <kbd>R</kbd></li>
+</ul>
+<h3 id="zoom-in-the-desktop-by-scrolling-super">Zoom in the desktop by scrolling + Super.</h3>
+<ul>
+<li><code>zoom.modifier</code> = <kbd>&lt;super&gt;</kbd></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.tracking", "navigation.expand"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
