@@ -16,6 +16,7 @@ theme:
     - content.code.copy
     - navigation.tracking
     - navigation.expand
+    - navigation.footer
 
   palette:
     - scheme: default
@@ -45,13 +46,23 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/5SWAxmBCUH
+      name: Join us on Discord
+      
+    - icon: material/grid
+      link: "https://matrix.to/#/#wayfire:matrix.org"
+      name: Join us on Matrix
+
 nav:
   - Home: index.md
   - General: General.md
   - Configuration: Configuration.md
   - Tutorial: Tutorial.md
   - Contributing: Contributing.md
-  - 'Tips & Tricks': 'Tips-&-Tricks.md'
+  - Tips & Tricks: Tips-&-Tricks.md
   - FAQ: FAQ.md
   - For Developers:
     - 'IPC for developers': IPC-for-developers.md
