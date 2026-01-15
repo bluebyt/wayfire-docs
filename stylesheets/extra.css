@@ -1,11 +1,27 @@
-/* Light mode */
-[data-md-color-scheme="default"] {
-  --md-default-bg-color: #ffffff;
-  --md-default-fg-color: #000000;
+/* 2. Apply font size to the typeset container */
+.md-typeset {
+    font-size: 19px; /* For testing, 48px is huge and should be obvious */
+    line-height: 1.65;
 }
 
-/* Dark mode (Tokyonight-style) */
-[data-md-color-scheme="slate"] {
-  --md-default-bg-color: #1a1b26;
-  --md-default-fg-color: #c0caf5;
+/* Reduce space below the H1 title */
+.md-typeset h1 {
+    margin-bottom: 0.5rem; /* Default is often 1.25rem or higher */
 }
+
+/* Reduce space above the paragraph */
+.md-typeset p {
+    margin-top: 0;
+}
+
+/*
+[data-md-color-scheme="default"] {
+    --md-default-bg-color: #ffffff;
+    --md-default-fg-color: #000000;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #1a1b26;
+    --md-default-fg-color: #c0caf5;
+}
+*/
