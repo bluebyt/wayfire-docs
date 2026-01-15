@@ -1,6 +1,7 @@
 Here is a non-extensive list of some common issues which arise when using Wayfire.
 
 **Table of contents**
+
 * [1. Wayfire shows just a black screen with a cursor visible](#1-wayfire-shows-just-a-black-screen-with-a-cursor-visible)
 * [2. The mouse cursor is invisible](#2-the-mouse-cursor-is-invisible)
 * [3. Compilation error X](#3-compilation-error-x)

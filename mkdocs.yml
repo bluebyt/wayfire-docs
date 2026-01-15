@@ -2,81 +2,85 @@ site_name: Wayfire Wiki
 docs_dir: docs
 
 theme:
-  name: material
-  font:
-    text: Inter
-    code: JetBrains Mono
-  features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.instant
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-    - navigation.tracking
-    - navigation.expand
-    - navigation.footer
+    name: material
+    logo: images/wayfire.png
+    font:
+        text: Ubuntu
+        code: Ubuntu Mono
+    features:
+        - navigation.tabs
+        - navigation.sections
+        - navigation.instant
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.code.copy
+        - navigation.tracking
+        - navigation.expand
+        - navigation.footer
 
-  palette:
-    - scheme: default
-      primary: blue
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
+    palette:
+        - scheme: default
+          primary: blue
+          accent: light blue
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to dark mode
 
-    - scheme: slate
-      primary: blue
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+        - scheme: slate
+          primary: blue
+          accent: light blue
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to light mode
 
 markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.tabbed
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.tabbed
+    - attr_list
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra:
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/5SWAxmBCUH
-      name: Join us on Discord
-      
-    - icon: material/grid
-      link: "https://matrix.to/#/#wayfire:matrix.org"
-      name: Join us on Matrix
+    social:
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/5SWAxmBCUH
+          name: Join us on Discord
+
+        - icon: material/grid
+          link: "https://matrix.to/#/#wayfire:matrix.org"
+          name: Join us on Matrix
 
 nav:
-  - Home: index.md
-  - General: General.md
-  - Configuration: Configuration.md
-  - Tutorial: Tutorial.md
-  - Contributing: Contributing.md
-  - Tips & Tricks: Tips-&-Tricks.md
-  - FAQ: FAQ.md
-  - For Developers:
-    - 'IPC for developers': IPC-for-developers.md
-    - 'Plugin architecture': Plugin-architecture.md
-    - 'View life cycle': View-life-cycle.md
-    - 'Views, Toplevels and Transactions': Views,-Toplevels-and-Transactions.md
-    - 'Scenegraph': Scenegraph.md
-    - 'Rendering': Rendering.md
-    - '[WIP] Design overview': '[WIP]-Design-overview.md'
-    - '[WIP] What does a compositor do?': '[WIP]-What-does-a-compositor-do?.md'
-  - Advanced Topics:
-    - 'Bindings available by default': Bindings-available-by-default.md
-    - 'Debugging problems': Debugging-problems.md
-    - 'Additional configuration for external applications': Additional-configuration-for-external-applications.md
-    - 'Localisation': Localisation.md
-    - 'Project goals': Project-goals.md
-    - 'Related projects': Related-projects.md
+    - Home: index.md
+    - General: General.md
+    - Configuration: Configuration.md
+    - Tutorial: Tutorial.md
+    - Contributing: Contributing.md
+    - Tips & Tricks: Tips-&-Tricks.md
+    - FAQ: FAQ.md
+    - For Developers:
+          - "IPC for developers": IPC-for-developers.md
+          - "Plugin architecture": Plugin-architecture.md
+          - "View life cycle": View-life-cycle.md
+          - "Views, Toplevels and Transactions": Views,-Toplevels-and-Transactions.md
+          - "Scenegraph": Scenegraph.md
+          - "Rendering": Rendering.md
+          - "[WIP] Design overview": "[WIP]-Design-overview.md"
+          - "[WIP] What does a compositor do?": "[WIP]-What-does-a-compositor-do?.md"
+    - Advanced Topics:
+          - "Bindings available by default": Bindings-available-by-default.md
+          - "Debugging problems": Debugging-problems.md
+          - "Additional configuration for external applications": Additional-configuration-for-external-applications.md
+          - "Localisation": Localisation.md
+          - "Project goals": Project-goals.md
+          - "Related projects": Related-projects.md
+
+extra_css:
+    - stylesheets/extra.css

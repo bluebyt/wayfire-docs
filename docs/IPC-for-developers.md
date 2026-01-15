@@ -51,4 +51,3 @@ Wayfire's IPC mechanism is made so that it is nearly independent from the actual
 - IPC clients (objects which implement this interface): they represent a connected client. Used so that the IPC methods can identify clients and send them notifications.
 
 With this division, it is possible to provide these IPC methods also over DBus, or any other IPC variant, as long as the json data can be transported to the client. All plugins providing actual functionalities work only with the method repository, which is independent of the actual IPC realization.
-
