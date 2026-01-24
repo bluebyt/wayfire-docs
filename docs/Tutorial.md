@@ -42,17 +42,17 @@ Here is an overview (non-exhaustive) of the key-bindings you can find in the [`w
 
 [`wayfire.ini`]: https://github.com/WayfireWM/wayfire/blob/master/wayfire.ini
 
-- <kbd>Super</kbd> + <kbd>e</kbd> ⇒ Overview all workspaces.
-  - [<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd><kbd>Enter</kbd><kbd>Home</kbd><kbd>End</kbd>] ⇒ Switch to the specified workspace; add <kbd>Shift</kbd> for bottom.
-- <kbd>Super</kbd> + <kbd>Enter</kbd> ⇒ Open a terminal ([Alacritty]).
-- <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> ⇒ Open the launcher ([Wofi]).
-- <kbd>Super</kbd> + <kbd>w</kbd> ⇒ Close window.
-- <kbd>Super</kbd> + <kbd>Tab</kbd> ⇒ Preview windows and select the next window; add <kbd>Shift</kbd> for previous.
-- <kbd>Alt</kbd> + <kbd>Escape</kbd> ⇒ Select the next window.
-- <kbd>Super</kbd> + [<kbd>Up</kbd><kbd>Down</kbd><kbd>Left</kbd><kbd>Right</kbd><kbd>Home</kbd><kbd>End</kbd><kbd>f</kbd><kbd>d</kbd>] ⇒ Arrange window into a grid; add <kbd>Shift</kbd> for bottom.
-- <kbd>Super</kbd> + [<kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>] ⇒ Switch to adjacent workspace; add <kbd>Shift</kbd> to move with the focused window.
-- <kbd>Super</kbd> + <kbd>Control</kbd> + [<kbd>h</kbd><kbd>l</kbd>] ⇒ Switch to the previous or next workspace, by using the cube.
-- <kbd>Super</kbd> + <kbd>o</kbd> ⇒ Move focus to the next output; add <kbd>Shift</kbd> to move with the focused window.
+- ++super++ + ++e++ ⇒ Overview all workspaces.
+  - [++h++++j++++k++++l++++enter++++home++++end++] ⇒ Switch to the specified workspace; add ++shift++ for bottom.
+- ++super++ + ++enter++ ⇒ Open a terminal ([Alacritty]).
+- ++super++ + ++shift++ + ++enter++ ⇒ Open the launcher ([Wofi]).
+- ++super++ + ++w++ ⇒ Close window.
+- ++super++ + ++tab++ ⇒ Preview windows and select the next window; add ++shift++ for previous.
+- ++alt++ + ++escape++ ⇒ Select the next window.
+- ++super++ + [++up++++down++++left++++right++++home++++end++++f++++d++] ⇒ Arrange window into a grid; add ++shift++ for bottom.
+- ++super++ + [++h++++j++++k++++l++] ⇒ Switch to adjacent workspace; add ++shift++ to move with the focused window.
+- ++super++ + ++control++ + [++h++++l++] ⇒ Switch to the previous or next workspace, by using the cube.
+- ++super++ + ++o++ ⇒ Move focus to the next output; add ++shift++ to move with the focused window.
 
 [Alacritty]: https://github.com/alacritty/alacritty
 [Wofi]: https://hg.sr.ht/~scoopta/wofi
@@ -64,7 +64,7 @@ Here is an overview (non-exhaustive) of the key-bindings you can find in the [`w
 ### Opening terminals and moving around
 
 One very basic operation is opening a new terminal.
-By pressing <kbd>Super</kbd> + <kbd>Enter</kbd>, a new terminal will be opened.
+By pressing ++super++ + ++enter++, a new terminal will be opened.
 By default, the key-binding opens [Alacritty].
 
 [Alacritty]: https://github.com/alacritty/alacritty
@@ -73,7 +73,7 @@ By default, the key-binding opens [Alacritty].
 
 ### Opening other applications
 
-Aside from opening applications from a terminal, you can also use the handy [Wofi] which is opened by pressing <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd> by default.
+Aside from opening applications from a terminal, you can also use the handy [Wofi] which is opened by pressing ++super++ + ++shift++ + ++enter++ by default.
 
 ![open-applications](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/open-applications/2020-02-18_17:39:34.gif)
 
@@ -82,37 +82,37 @@ See the section [Configuring Wayfire](#configuring-wayfire) for details.
 
 ### Closing windows
 
-If an application does not provide a mechanism for closing (most applications provide a menu, the middle mouse button for tabs, the escape key or a shortcut like <kbd>Control</kbd> + <kbd>w</kbd> to close), you can press <kbd>Super</kbd> + <kbd>w</kbd>, <kbd>Super</kbd> and middle mouse button or <kbd>Alt</kbd> + <kbd>F4</kbd> to close a window.
+If an application does not provide a mechanism for closing (most applications provide a menu, the middle mouse button for tabs, the escape key or a shortcut like ++control++ + ++w++ to close), you can press ++super++ + ++w++, ++super++ and middle mouse button or ++alt++ + ++f4++ to close a window.
 
 ![close-window](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/close-window/2020-02-18_17:41:03.gif)
 
 ### Moving windows
 
 By dragging the window’s title bar with your mouse you can move the window around.
-You can also drag windows by holding down <kbd>Super</kbd> and left mouse button.
+You can also drag windows by holding down ++super++ and left mouse button.
 
 ![drag-window](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/drag-window/2020-02-18_16:49:54.gif)
 
 ### Resizing windows
 
 By grabbing the borders and moving them you can resize the window.
-You can also do that by holding down <kbd>Super</kbd> and right mouse button.
+You can also do that by holding down ++super++ and right mouse button.
 
 ![resize-window](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/resize-window/2020-02-18_17:44:25.gif)
 
 ### Switching between windows
 
-By pressing <kbd>Super</kbd> + <kbd>Tab</kbd>, you can preview the windows in the current workspace and select the next window; add <kbd>Shift</kbd> for previous.
-To switch without animation, press <kbd>Alt</kbd> + <kbd>Escape</kbd>.
+By pressing ++super++ + ++tab++, you can preview the windows in the current workspace and select the next window; add ++shift++ for previous.
+To switch without animation, press ++alt++ + ++escape++.
 
 ![switch-between-windows](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/switch-between-windows/2020-02-18_17:24:41.gif)
 
 ### Positioning windows
 
-Press <kbd>Super</kbd> and the arrow keys for arranging windows into a grid of 2 cells.
-Press <kbd>Super</kbd> + [<kbd>Home</kbd><kbd>End</kbd>] for arranging windows into a grid of 4 cells; add <kbd>Shift</kbd> for bottom.
-Press <kbd>Super</kbd> + <kbd>f</kbd> to position the window in the center of the screen.
-Press <kbd>Super</kbd> + <kbd>d</kbd> to restore the window to its original size and position.
+Press ++super++ and the arrow keys for arranging windows into a grid of 2 cells.
+Press ++super++ + [++home++++end++] for arranging windows into a grid of 4 cells; add ++shift++ for bottom.
+Press ++super++ + ++f++ to position the window in the center of the screen.
+Press ++super++ + ++d++ to restore the window to its original size and position.
 You can also use the keypad, which is laid out exactly to match the slots.
 
 ![grid](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/grid/2020-02-18_16:21:37.gif)
@@ -123,30 +123,30 @@ Workspaces are an easy way to group a set of windows.
 Wayfire allows you to arrange your workspaces spatially, rather than linearly.
 By default, there is 9 – 3 horizontal and 3 vertical – workspaces, and you are on the first workspace.
 
-To switch to another workspace, press <kbd>Super</kbd> + [HJKL]; add <kbd>Shift</kbd> to move with the focused window.
+To switch to another workspace, press ++super++ + [HJKL]; add ++shift++ to move with the focused window.
 
 [HJKL]: https://en.wikipedia.org/wiki/Arrow_keys#HJKL_keys
 
 ![switch-to-workspace](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/switch-to-workspace/2020-02-18_17:59:00.gif)
 
-You can also use the cube, by holding <kbd>Super</kbd> + <kbd>Shift</kbd> and left mouse button,
-or via the keyboard with <kbd>Super</kbd> + <kbd>Control</kbd> + [<kbd>h</kbd><kbd>l</kbd>].
+You can also use the cube, by holding ++super++ + ++shift++ and left mouse button,
+or via the keyboard with ++super++ + ++control++ + [++h++++l++].
 
 ![cube](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/cube/2020-02-18_18:23:53.gif)
 
-Pressing <kbd>Super</kbd> allows you to preview all workspaces in the current output.
+Pressing ++super++ allows you to preview all workspaces in the current output.
 You can use your mouse to select a workspace.
-[HJKL], <kbd>Enter</kbd>, <kbd>Home</kbd> and <kbd>End</kbd> can be used to select a workspace with your keyboard; add <kbd>Shift</kbd> for bottom.
+[HJKL], ++enter++, ++home++ and ++end++ can be used to select a workspace with your keyboard; add ++shift++ for bottom.
 
 ![expo](https://github.com/alexherbo2/wayfire-resources/raw/master/demos/expo/2020-02-18_18:43:52.gif)
 
 ### Moving windows to workspaces
 
-To move a window to another workspace, simply press <kbd>Super</kbd> + <kbd>Shift</kbd> + [HJKL].
+To move a window to another workspace, simply press ++super++ + ++shift++ + [HJKL].
 
 ### Changing the opacity
 
-When the modifier key <kbd>Super</kbd> + <kbd>Alt</kbd> is held down, you can scroll down and up to adjust the opacity of the window.
+When the modifier key ++super++ + ++alt++ is held down, you can scroll down and up to adjust the opacity of the window.
 
 ### Reloading the configuration
 
@@ -155,7 +155,7 @@ Most of the options are automatically reloaded.
 
 ### Exiting Wayfire
 
-Press <kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>Backspace</kbd>.
+Press ++control++ + ++alt++ + ++backspace++.
 
 **TODO**: Add a configuration option.
 
@@ -387,7 +387,7 @@ screensaver_timeout = 300
 dpms_timeout = 600
 ```
 
-- Disables the compositor going idle with <kbd>Super</kbd> + <kbd>z</kbd>.
+- Disables the compositor going idle with ++super++ + ++z++.
 - This will lock your screen after 300 seconds of inactivity, then turn off
 your displays after another 300 seconds.
 

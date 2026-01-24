@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -44,10 +44,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Ubuntu Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -90,8 +92,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Wayfire Wiki" class="md-header__button md-logo" aria-label="Wayfire Wiki" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../images/wayfire.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -402,8 +403,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Wayfire Wiki" class="md-nav__button md-logo" aria-label="Wayfire Wiki" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../images/wayfire.png" alt="logo">
 
     </a>
     Wayfire Wiki
@@ -602,7 +602,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="boolean">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#integer" class="md-nav__link">
@@ -696,6 +697,11 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#options" class="md-nav__link">
@@ -730,8 +736,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Invert">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#inverttoggle" class="md-nav__link">
@@ -744,11 +749,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#zoom" class="md-nav__link">
     <span class="md-ellipsis">
@@ -758,8 +758,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Zoom">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#zoommodifier" class="md-nav__link">
@@ -799,11 +798,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#desktop" class="md-nav__link">
     <span class="md-ellipsis">
@@ -825,8 +819,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Alpha">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#alphamin_value" class="md-nav__link">
@@ -850,11 +843,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#cube" class="md-nav__link">
     <span class="md-ellipsis">
@@ -864,8 +852,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cube">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#cubeactivate" class="md-nav__link">
@@ -1032,11 +1019,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#expo" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1046,8 +1028,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Expo">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#expobackground" class="md-nav__link">
@@ -1104,11 +1085,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#idle" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1118,8 +1094,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Idle">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#idlecube_max_zoom" class="md-nav__link">
@@ -1198,11 +1173,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#output-switcher" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1212,8 +1182,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Output switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#oswitchnext_output" class="md-nav__link">
@@ -1237,11 +1206,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#scale" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1251,8 +1215,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Scale">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#scaletoggle" class="md-nav__link">
@@ -1441,11 +1404,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#window-rules" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1466,8 +1424,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Viewport switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#vswitchbinding_down" class="md-nav__link">
@@ -1689,11 +1646,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#viewport-swipe" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1703,8 +1655,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Viewport swipe">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#vswipebackground" class="md-nav__link">
@@ -1827,11 +1778,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#workspace-sets" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1841,8 +1787,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Workspace sets">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wsetswset_n" class="md-nav__link">
@@ -1882,11 +1827,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#effects" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1908,8 +1848,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Animate">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#animateclose_animation" class="md-nav__link">
@@ -2076,11 +2015,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#blur" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2090,8 +2024,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Blur">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#blurbokeh_degrade" class="md-nav__link">
@@ -2258,11 +2191,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#decoration" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2272,8 +2200,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Decoration">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#decorationactive_color" class="md-nav__link">
@@ -2352,11 +2279,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#fisheye" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2366,8 +2288,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Fisheye">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#fisheyeradius" class="md-nav__link">
@@ -2402,11 +2323,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#wobbly" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2416,8 +2332,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Wobbly">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wobblyfriction" class="md-nav__link">
@@ -2452,11 +2367,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#window-rotate" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2466,8 +2376,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Window rotate">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wrotactivate" class="md-nav__link">
@@ -2477,11 +2386,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2511,8 +2415,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Autostart">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#autostartprogram-id-shell-command" class="md-nav__link">
@@ -2536,11 +2439,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#command" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2550,8 +2448,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Command">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#commandbinding_id-key" class="md-nav__link">
@@ -2586,11 +2483,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#core" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2600,8 +2492,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#corebackground_color" class="md-nav__link">
@@ -2735,11 +2626,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
@@ -2761,8 +2647,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Keyboard configuration">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inputkb_repeat_delay" class="md-nav__link">
@@ -2872,12 +2762,8 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="input.xkb_variant">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#libinput-configuration" class="md-nav__link">
@@ -2888,8 +2774,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="libinput configuration">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inputleft_handed_mode" class="md-nav__link">
@@ -3065,12 +2955,8 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="input.tablet_motion_mode">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#cursor-configuration" class="md-nav__link">
@@ -3081,8 +2967,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cursor configuration">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inputcursor_theme" class="md-nav__link">
@@ -3104,12 +2994,8 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="input.cursor_size">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#input-device-specific-options" class="md-nav__link">
@@ -3120,8 +3006,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Input device-specific options">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#input-deviceoutput" class="md-nav__link">
@@ -3145,16 +3035,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3164,8 +3044,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Output">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#outputposition" class="md-nav__link">
@@ -3222,11 +3101,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#workarounds" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3236,8 +3110,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Workarounds">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#workaroundsapp_id_mode" class="md-nav__link">
@@ -3365,11 +3238,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#utility" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3480,8 +3348,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Fast switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#fast-switcheractivate" class="md-nav__link">
@@ -3505,11 +3372,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#grid" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3519,8 +3381,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Grid">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#gridduration" class="md-nav__link">
@@ -3654,11 +3515,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#move" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3668,8 +3524,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Move">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#moveactivate" class="md-nav__link">
@@ -3737,11 +3592,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#place" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3751,8 +3601,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Place">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#placemode" class="md-nav__link">
@@ -3765,11 +3614,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#preserve-output" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3779,8 +3623,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Preserve output">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#preserve-outputlast_output_focus_timeout" class="md-nav__link">
@@ -3793,11 +3636,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#simple-tile" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3807,8 +3645,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Simple tile">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#simple-tilebutton_move" class="md-nav__link">
@@ -3942,11 +3779,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#switcher" class="md-nav__link">
     <span class="md-ellipsis">
@@ -3956,8 +3788,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#switchergesture_toggle" class="md-nav__link">
@@ -4025,11 +3856,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#resize" class="md-nav__link">
     <span class="md-ellipsis">
@@ -4039,8 +3865,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Resize">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#resizeactivate" class="md-nav__link">
@@ -4053,11 +3878,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#wm-actions" class="md-nav__link">
     <span class="md-ellipsis">
@@ -4067,8 +3887,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="WM-Actions">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wm-actionstoggle_fullscreen" class="md-nav__link">
@@ -4144,11 +3963,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -4889,7 +4703,8 @@
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="boolean">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#integer" class="md-nav__link">
@@ -4983,6 +4798,11 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#options" class="md-nav__link">
@@ -5017,8 +4837,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Invert">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#inverttoggle" class="md-nav__link">
@@ -5031,11 +4850,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#zoom" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5045,8 +4859,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Zoom">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#zoommodifier" class="md-nav__link">
@@ -5086,11 +4899,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#desktop" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5112,8 +4920,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Alpha">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#alphamin_value" class="md-nav__link">
@@ -5137,11 +4944,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#cube" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5151,8 +4953,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cube">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#cubeactivate" class="md-nav__link">
@@ -5319,11 +5120,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#expo" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5333,8 +5129,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Expo">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#expobackground" class="md-nav__link">
@@ -5391,11 +5186,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#idle" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5405,8 +5195,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Idle">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#idlecube_max_zoom" class="md-nav__link">
@@ -5485,11 +5274,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#output-switcher" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5499,8 +5283,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Output switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#oswitchnext_output" class="md-nav__link">
@@ -5524,11 +5307,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#scale" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5538,8 +5316,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Scale">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#scaletoggle" class="md-nav__link">
@@ -5728,11 +5505,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#window-rules" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5753,8 +5525,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Viewport switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#vswitchbinding_down" class="md-nav__link">
@@ -5976,11 +5747,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#viewport-swipe" class="md-nav__link">
     <span class="md-ellipsis">
@@ -5990,8 +5756,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Viewport swipe">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#vswipebackground" class="md-nav__link">
@@ -6114,11 +5879,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#workspace-sets" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6128,8 +5888,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Workspace sets">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wsetswset_n" class="md-nav__link">
@@ -6169,11 +5928,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#effects" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6195,8 +5949,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Animate">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#animateclose_animation" class="md-nav__link">
@@ -6363,11 +6116,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#blur" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6377,8 +6125,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Blur">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#blurbokeh_degrade" class="md-nav__link">
@@ -6545,11 +6292,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#decoration" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6559,8 +6301,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Decoration">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#decorationactive_color" class="md-nav__link">
@@ -6639,11 +6380,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#fisheye" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6653,8 +6389,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Fisheye">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#fisheyeradius" class="md-nav__link">
@@ -6689,11 +6424,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#wobbly" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6703,8 +6433,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Wobbly">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wobblyfriction" class="md-nav__link">
@@ -6739,11 +6468,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#window-rotate" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6753,8 +6477,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Window rotate">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wrotactivate" class="md-nav__link">
@@ -6764,11 +6487,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -6798,8 +6516,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Autostart">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#autostartprogram-id-shell-command" class="md-nav__link">
@@ -6823,11 +6540,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#command" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6837,8 +6549,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Command">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#commandbinding_id-key" class="md-nav__link">
@@ -6873,11 +6584,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#core" class="md-nav__link">
     <span class="md-ellipsis">
@@ -6887,8 +6593,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#corebackground_color" class="md-nav__link">
@@ -7022,11 +6727,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#input" class="md-nav__link">
     <span class="md-ellipsis">
@@ -7048,8 +6748,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Keyboard configuration">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inputkb_repeat_delay" class="md-nav__link">
@@ -7159,12 +6863,8 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="input.xkb_variant">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#libinput-configuration" class="md-nav__link">
@@ -7175,8 +6875,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="libinput configuration">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inputleft_handed_mode" class="md-nav__link">
@@ -7352,12 +7056,8 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="input.tablet_motion_mode">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#cursor-configuration" class="md-nav__link">
@@ -7368,8 +7068,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cursor configuration">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#inputcursor_theme" class="md-nav__link">
@@ -7391,12 +7095,8 @@
     </span>
   </a>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
+    <nav class="md-nav" aria-label="input.cursor_size">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#input-device-specific-options" class="md-nav__link">
@@ -7407,8 +7107,12 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Input device-specific options">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#input-deviceoutput" class="md-nav__link">
@@ -7432,16 +7136,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
@@ -7451,8 +7145,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Output">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#outputposition" class="md-nav__link">
@@ -7509,11 +7202,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#workarounds" class="md-nav__link">
     <span class="md-ellipsis">
@@ -7523,8 +7211,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Workarounds">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#workaroundsapp_id_mode" class="md-nav__link">
@@ -7652,11 +7339,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#utility" class="md-nav__link">
     <span class="md-ellipsis">
@@ -7767,8 +7449,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Fast switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#fast-switcheractivate" class="md-nav__link">
@@ -7792,11 +7473,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#grid" class="md-nav__link">
     <span class="md-ellipsis">
@@ -7806,8 +7482,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Grid">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#gridduration" class="md-nav__link">
@@ -7941,11 +7616,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#move" class="md-nav__link">
     <span class="md-ellipsis">
@@ -7955,8 +7625,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Move">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#moveactivate" class="md-nav__link">
@@ -8024,11 +7693,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#place" class="md-nav__link">
     <span class="md-ellipsis">
@@ -8038,8 +7702,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Place">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#placemode" class="md-nav__link">
@@ -8052,11 +7715,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#preserve-output" class="md-nav__link">
     <span class="md-ellipsis">
@@ -8066,8 +7724,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Preserve output">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#preserve-outputlast_output_focus_timeout" class="md-nav__link">
@@ -8080,11 +7737,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#simple-tile" class="md-nav__link">
     <span class="md-ellipsis">
@@ -8094,8 +7746,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Simple tile">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#simple-tilebutton_move" class="md-nav__link">
@@ -8229,11 +7880,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#switcher" class="md-nav__link">
     <span class="md-ellipsis">
@@ -8243,8 +7889,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Switcher">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#switchergesture_toggle" class="md-nav__link">
@@ -8312,11 +7957,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#resize" class="md-nav__link">
     <span class="md-ellipsis">
@@ -8326,8 +7966,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Resize">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#resizeactivate" class="md-nav__link">
@@ -8340,11 +7979,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#wm-actions" class="md-nav__link">
     <span class="md-ellipsis">
@@ -8354,8 +7988,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="WM-Actions">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#wm-actionstoggle_fullscreen" class="md-nav__link">
@@ -8431,11 +8064,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -8533,7 +8161,7 @@
 <p>The Wayfire configuration file uses an <a href="https://en.wikipedia.org/wiki/INI_file">INI</a> file format, similar to <a href="https://git-scm.com">Git</a>.
 It contains a number of options that affect the Wayland compositor’s behavior.</p>
 <p><a href="https://github.com/WayfireWM/wayfire/blob/master/wayfire.ini">Example</a></p>
-<h6 id="notation">Notation</h6>
+<h4 id="notation">Notation</h4>
 <p>The variables are divided into sections, wherein the fully qualified variable name of the variable itself is the last dot-separated segment and the section name is everything before the last dot.</p>
 <h3 id="location">Location</h3>
 <p>Wayfire searches for a config file in the following locations, in this order:</p>
@@ -8551,34 +8179,36 @@ The <code>#</code> characters begin comments to the end of line, blank lines are
 <p>The file consists of sections and variables.
 A section begins with the name of the section in square brackets and continues until the next section begins.
 Each variable must belong to some section, which means that there must be a section header before the first setting of a variable.</p>
-<p>All the other lines (and the remainder of the line after the section header) are recognized as setting variables, in the form <code>name = value</code>. </p>
+<p>All the other lines (and the remainder of the line after the section header) are recognized as setting variables, in the form <code>name = value</code>.</p>
 <p>If a <code>value</code> contains the <code>#</code> character it should be escaped using <code>\</code>.</p>
 <h2 id="values">Values</h2>
 <p>Values of many variables are treated as a simple string, but there are variables that take values of specific types and there are rules as to how to spell them.</p>
-<h6 id="boolean"><code>boolean</code></h6>
+<h3 id="boolean"><code>boolean</code></h3>
 <p>When a variable is said to take a boolean value, <code>true</code> or <code>false</code>.</p>
-<h6 id="integer"><code>integer</code></h6>
+<h4 id="integer"><code>integer</code></h4>
 <p>The value for numbers.</p>
-<h6 id="double"><code>double</code></h6>
+<h4 id="double"><code>double</code></h4>
 <p>The value for floating point numbers.</p>
-<h6 id="color"><code>color</code></h6>
+<h4 id="color"><code>color</code></h4>
 <p>The value for a variable that takes a color is a tuple of four floating point numbers (between 0 and 1) in <a href="https://en.wikipedia.org/wiki/RGBA_color_model">RGBA</a> format.</p>
-<h6 id="key-and-button"><code>key</code> and <code>button</code></h6>
+<h4 id="key-and-button"><code>key</code> and <code>button</code></h4>
 <p>The value represents a key combo, also called chord.
 A key combo is a key sequence in which the keys are pressed at the same time.</p>
 <p>Keys are space-separated and can be:</p>
 <ul>
-<li>Modifier</li>
+<li>Modifier<ul>
 <li><code>&lt;shift&gt;</code></li>
 <li><code>&lt;ctrl&gt;</code></li>
 <li><code>&lt;alt&gt;</code></li>
 <li><code>&lt;super&gt;</code></li>
+</ul>
+</li>
 <li>Key</li>
 <li>Button</li>
 </ul>
 <p>See <a href="https://github.com/alexherbo2/wayfire-resources/blob/master/docs/keys.txt">Keys</a> for a complete reference of key and button names.
 The document is based on [<code>input-event-codes.h</code>] from the <a href="https://kernel.org">Linux</a> kernel.</p>
-<h6 id="gesture"><code>gesture</code></h6>
+<h4 id="gesture"><code>gesture</code></h4>
 <p>The value represents a touchscreen gesture, as follows:</p>
 <div class="highlight"><pre><span></span><code>pinch [in|out] &lt;finger-count&gt;
 swipe [up|down|left|right] &lt;finger-count&gt;
@@ -8593,17 +8223,17 @@ edge-swipe [up|down|left|right] &lt;finger-count&gt;
 <ul>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/input.xml"><code>metadata/input.xml</code></a></li>
 </ul>
-<h6 id="hotspot"><code>hotspot</code></h6>
+<h4 id="hotspot"><code>hotspot</code></h4>
 <p>It is also possible to activate items by a "hot corner"</p>
 <p>Example: <code>hotspot top-left 100x10 1000</code></p>
 <p>where 100x10 is the width x height of the corner</p>
 <p>and the 1000 being the time the input (mouse or touch) needs to be inside that area.</p>
-<h6 id="activator"><code>activator</code></h6>
+<h4 id="activator"><code>activator</code></h4>
 <p>The value represents a group of bindings which can all be used for the same action.</p>
 <p>The bindings can be [<code>key</code>]s, [<code>button</code>]s and [<code>gesture</code>]s, [<code>hotspot</code>]s, separated by a <code>|</code>.</p>
 <p>Example:</p>
 <p><code>&lt;super&gt; KEY_E | &lt;ctrl&gt; &lt;alt&gt; BTN_EXTRA | pinch in 4</code></p>
-<h6 id="criteria"><code>criteria</code></h6>
+<h4 id="criteria"><code>criteria</code></h4>
 <p>The value represents command criteria to affect certain windows, as follows:</p>
 <div class="highlight"><pre><span></span><code>title [is|contains] &quot;&lt;string&gt;&quot;
 app_id [is|contains] &quot;&lt;string&gt;&quot;
@@ -8635,7 +8265,7 @@ In addition, there are the special values <code>all</code> and <code>none</code>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/invert.xml"><code>metadata/invert.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/invert.cpp"><code>plugins/single_plugins/invert.cpp</code></a></li>
 </ul>
-<h6 id="inverttoggle"><code>invert.toggle</code></h6>
+<h4 id="inverttoggle"><code>invert.toggle</code></h4>
 <p>Inverts the colors of the whole output with the specified activator.</p>
 <h4 id="zoom">Zoom</h4>
 <p>A plugin to zoom in the desktop with the mouse.</p>
@@ -8644,12 +8274,12 @@ In addition, there are the special values <code>all</code> and <code>none</code>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/zoom.xml"><code>metadata/zoom.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/zoom.cpp"><code>plugins/single_plugins/zoom.cpp</code></a></li>
 </ul>
-<h6 id="zoommodifier"><code>zoom.modifier</code></h6>
+<h4 id="zoommodifier"><code>zoom.modifier</code></h4>
 <p>Scrolls with the specified modifier to zoom in and out.</p>
-<h6 id="zoomsmoothing_duration"><code>zoom.smoothing_duration</code></h6>
+<h4 id="zoomsmoothing_duration"><code>zoom.smoothing_duration</code></h4>
 <p>Sets the smoothing duration in milliseconds.
 The default is <strong>300</strong>.</p>
-<h6 id="zoomspeed"><code>zoom.speed</code></h6>
+<h4 id="zoomspeed"><code>zoom.speed</code></h4>
 <p>Sets the speed factor for zooming.
 The default is <strong>0.01</strong>.</p>
 <h3 id="desktop">Desktop</h3>
@@ -8660,10 +8290,10 @@ The default is <strong>0.01</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/alpha.xml"><code>metadata/alpha.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/alpha.cpp"><code>plugins/single_plugins/alpha.cpp</code></a></li>
 </ul>
-<h6 id="alphamin_value"><code>alpha.min_value</code></h6>
+<h4 id="alphamin_value"><code>alpha.min_value</code></h4>
 <p>Sets the minimum opacity of the window between 0 (completely transparent) and 1 (completely opaque).
 The default is <strong>0.1</strong>.</p>
-<h6 id="alphamodifier"><code>alpha.modifier</code></h6>
+<h4 id="alphamodifier"><code>alpha.modifier</code></h4>
 <p>When the modifier key is held down, you can scroll down and up to adjust the opacity of the window.</p>
 <h4 id="cube">Cube</h4>
 <p>A plugin to show the current workspace row as a cube.</p>
@@ -8677,12 +8307,12 @@ The default is <strong>0.1</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/cube/simple-background.hpp"><code>plugins/cube/simple-background.hpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/cube/skydome.hpp"><code>plugins/cube/skydome.hpp</code></a></li>
 </ul>
-<h6 id="cubeactivate"><code>cube.activate</code></h6>
+<h4 id="cubeactivate"><code>cube.activate</code></h4>
 <p>Activates the cube with the specified button.</p>
-<h6 id="cubebackground"><code>cube.background</code></h6>
+<h4 id="cubebackground"><code>cube.background</code></h4>
 <p>Sets the background color for the simple background mode.
 The default is <code>0.1 0.1 0.1 1.0</code>.</p>
-<h6 id="cubebackground_mode"><code>cube.background_mode</code></h6>
+<h4 id="cubebackground_mode"><code>cube.background_mode</code></h4>
 <p>Sets the background mode.</p>
 <p>Possible values are:</p>
 <ul>
@@ -8692,9 +8322,9 @@ The default is <code>0.1 0.1 0.1 1.0</code>.</p>
 </ul>
 <p>The default is <code>simple</code>.</p>
 <p>See <a href="https://en.wikipedia.org/wiki/Cube_mapping">Cube mapping</a> for details.</p>
-<h6 id="cubecubemap_image"><code>cube.cubemap_image</code></h6>
+<h4 id="cubecubemap_image"><code>cube.cubemap_image</code></h4>
 <p>Loads the specified image for the cubemap background mode.</p>
-<h6 id="cubedeform"><code>cube.deform</code></h6>
+<h4 id="cubedeform"><code>cube.deform</code></h4>
 <p>Specifies the deformation to be used.</p>
 <p>Possible values are:</p>
 <ul>
@@ -8704,31 +8334,31 @@ The default is <code>0.1 0.1 0.1 1.0</code>.</p>
 </ul>
 <p>The default is <strong>0</strong>.</p>
 <p>Deform values <strong>1</strong> and <strong>2</strong> are supported only with <a href="https://khronos.org/opengles/">OpenGL ES</a> 3.2 support.</p>
-<h6 id="cubeinitial_animation"><code>cube.initial_animation</code></h6>
+<h4 id="cubeinitial_animation"><code>cube.initial_animation</code></h4>
 <p>Sets the initial animation duration in milliseconds.
 The default is <strong>350</strong>.</p>
-<h6 id="cubelight"><code>cube.light</code></h6>
+<h4 id="cubelight"><code>cube.light</code></h4>
 <p>Specifies whether to use lighting.
 The default is <strong>true</strong>.</p>
-<h6 id="cuberotate_left"><code>cube.rotate_left</code></h6>
+<h4 id="cuberotate_left"><code>cube.rotate_left</code></h4>
 <p>Rotates left with the specified activator.</p>
-<h6 id="cuberotate_right"><code>cube.rotate_right</code></h6>
+<h4 id="cuberotate_right"><code>cube.rotate_right</code></h4>
 <p>Rotates right with the specified activator.</p>
-<h6 id="cubeskydome_mirror"><code>cube.skydome_mirror</code></h6>
+<h4 id="cubeskydome_mirror"><code>cube.skydome_mirror</code></h4>
 <p>Specifies whether to mirror skydome.
 The default is <strong>true</strong>.</p>
-<h6 id="cubeskydome_texture"><code>cube.skydome_texture</code></h6>
+<h4 id="cubeskydome_texture"><code>cube.skydome_texture</code></h4>
 <p>Loads the specified texture for the skydome background mode.</p>
-<h6 id="cubespeed_spin_horiz"><code>cube.speed_spin_horiz</code></h6>
+<h4 id="cubespeed_spin_horiz"><code>cube.speed_spin_horiz</code></h4>
 <p>Sets the velocity of horizontal spinning.
 The default is <strong>0.02</strong>.</p>
-<h6 id="cubespeed_spin_vert"><code>cube.speed_spin_vert</code></h6>
+<h4 id="cubespeed_spin_vert"><code>cube.speed_spin_vert</code></h4>
 <p>Sets the velocity of vertical spinning.
 The default is <strong>0.02</strong>.</p>
-<h6 id="cubespeed_zoom"><code>cube.speed_zoom</code></h6>
+<h4 id="cubespeed_zoom"><code>cube.speed_zoom</code></h4>
 <p>Sets the speed factor for zooming.
 The default is <strong>0.07</strong>.</p>
-<h6 id="cubezoom"><code>cube.zoom</code></h6>
+<h4 id="cubezoom"><code>cube.zoom</code></h4>
 <p>Sets the level of zoom out.
 Setting the value to <strong>0.0</strong> means to not zoom out.
 The default is <strong>0.1</strong>.</p>
@@ -8740,19 +8370,19 @@ The default is <strong>0.1</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/expo.xml"><code>metadata/expo.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/expo.cpp"><code>plugins/single_plugins/expo.cpp</code></a></li>
 </ul>
-<h6 id="expobackground"><code>expo.background</code></h6>
+<h4 id="expobackground"><code>expo.background</code></h4>
 <p>Sets the background color.
 The default is <code>0.1 0.1 0.1 1.0</code>.</p>
-<h6 id="expoduration"><code>expo.duration</code></h6>
+<h4 id="expoduration"><code>expo.duration</code></h4>
 <p>Sets the zoom duration in milliseconds.
 The default is <strong>300</strong>.</p>
-<h6 id="expooffset"><code>expo.offset</code></h6>
+<h4 id="expooffset"><code>expo.offset</code></h4>
 <p>Sets the delimiter offset (in pixels) between workspaces.
 The default is <strong>10.0</strong>.</p>
-<h6 id="exposelect_workspace_number"><code>expo.select_workspace_&lt;number&gt;</code></h6>
+<h4 id="exposelect_workspace_number"><code>expo.select_workspace_&lt;number&gt;</code></h4>
 <p>Selects the given workspace with the specified key.
 The numbering is left to right, line by line.</p>
-<h6 id="expotoggle"><code>expo.toggle</code></h6>
+<h4 id="expotoggle"><code>expo.toggle</code></h4>
 <p>Shows an overview of all workspaces with the specified activator.
 Pressing again exits.</p>
 <h4 id="idle">Idle</h4>
@@ -8762,28 +8392,28 @@ Pressing again exits.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/idle.xml"><code>metadata/idle.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/idle.cpp"><code>plugins/single_plugins/idle.cpp</code></a></li>
 </ul>
-<h6 id="idlecube_max_zoom"><code>idle.cube_max_zoom</code></h6>
+<h4 id="idlecube_max_zoom"><code>idle.cube_max_zoom</code></h4>
 <p>Sets the maximum zoom level.
 The default is <strong>1.5</strong>.</p>
-<h6 id="idlecube_rotate_speed"><code>idle.cube_rotate_speed</code></h6>
+<h4 id="idlecube_rotate_speed"><code>idle.cube_rotate_speed</code></h4>
 <p>Sets the speed rotation of the cube.
 The default is <strong>1.0</strong>.</p>
-<h6 id="idlecube_zoom_speed"><code>idle.cube_zoom_speed</code></h6>
+<h4 id="idlecube_zoom_speed"><code>idle.cube_zoom_speed</code></h4>
 <p>Sets the zoom speed.
 The speed means how long it will take from the time the screensaver starts to the time the cube reaches <code>idle.cube_max_zoom</code>.
 The default is <strong>1000</strong>.</p>
-<h6 id="idledisable_on_fullscreen"><code>idle.disable_on_fullscreen</code></h6>
+<h4 id="idledisable_on_fullscreen"><code>idle.disable_on_fullscreen</code></h4>
 <p>Disables idle on fullscreen.
 The default is <strong>true</strong>.</p>
-<h6 id="idledpms_timeout"><code>idle.dpms_timeout</code></h6>
+<h4 id="idledpms_timeout"><code>idle.dpms_timeout</code></h4>
 <p>Enters power saving mode after the specified seconds of inactivity.
 Setting the value to <strong>-1</strong> disables power saving.
 The default is <strong>-1</strong>.</p>
-<h6 id="idlescreensaver_timeout"><code>idle.screensaver_timeout</code></h6>
+<h4 id="idlescreensaver_timeout"><code>idle.screensaver_timeout</code></h4>
 <p>Displays the screensaver after the specified seconds of inactivity.
 Setting the value to <strong>-1</strong> disables the screensaver.
 The default is <strong>-1</strong>.</p>
-<h6 id="idletoggle"><code>idle.toggle</code></h6>
+<h4 id="idletoggle"><code>idle.toggle</code></h4>
 <p>Disables the compositor going idle with the specified activator.
 Pressing again reactivates.</p>
 <h4 id="output-switcher">Output switcher</h4>
@@ -8793,98 +8423,98 @@ Pressing again reactivates.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/oswitch.xml"><code>metadata/oswitch.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/oswitch.cpp"><code>plugins/single_plugins/oswitch.cpp</code></a></li>
 </ul>
-<h6 id="oswitchnext_output"><code>oswitch.next_output</code></h6>
+<h4 id="oswitchnext_output"><code>oswitch.next_output</code></h4>
 <p>Moves focus to the next output with the specified activator.</p>
-<h6 id="oswitchnext_output_with_win"><code>oswitch.next_output_with_win</code></h6>
+<h4 id="oswitchnext_output_with_win"><code>oswitch.next_output_with_win</code></h4>
 <p>Moves focus to the next output with the focused window with the specified activator.</p>
 <h4 id="scale">Scale</h4>
 <p>A plugin which shows all the windows on the current or on all workspaces, similar to GNOME's Overview.</p>
 <p>Defined in:</p>
 <ul>
-<li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/scale.xml"><code>metadata/scale.xml</code></a>  </li>
-<li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/scale/scale.cpp"><code>plugins/scale/scale.cpp</code></a>  </li>
+<li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/scale.xml"><code>metadata/scale.xml</code></a></li>
+<li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/scale/scale.cpp"><code>plugins/scale/scale.cpp</code></a></li>
 </ul>
 <hr />
-<h6 id="scaletoggle"><code>scale.toggle</code></h6>
-<p>Toggle scale for the windows on the current workspace.<br />
+<h4 id="scaletoggle"><code>scale.toggle</code></h4>
+<p>Toggle scale for the windows on the current workspace.
 Default is <strong><super> KEY_P</strong>.</p>
 <hr />
-<h6 id="scaletoggle_all"><code>scale.toggle_all</code></h6>
-<p>Toggle scale for the windows on all workspaces.<br />
+<h4 id="scaletoggle_all"><code>scale.toggle_all</code></h4>
+<p>Toggle scale for the windows on all workspaces.
 <strong>disabled</strong> by default.</p>
 <hr />
-<h6 id="scalespacing"><code>scale.spacing</code></h6>
-<p>The spacing between adjacent windows when scaled.<br />
+<h4 id="scalespacing"><code>scale.spacing</code></h4>
+<p>The spacing between adjacent windows when scaled.
 Default is <strong>50</strong> pixels.</p>
 <hr />
-<h6 id="scaleduration"><code>scale.duration</code></h6>
-<p>The duration of the scale initial animation.<br />
+<h4 id="scaleduration"><code>scale.duration</code></h4>
+<p>The duration of the scale initial animation.
 Default is <strong>750</strong> milliseconds.</p>
 <hr />
-<h6 id="scaleinteract"><code>scale.interact</code></h6>
-<p>Whether scale is started in interactive mode.<br />
+<h4 id="scaleinteract"><code>scale.interact</code></h4>
+<p>Whether scale is started in interactive mode.
 Interactive mode allows the user to actually type or click in the scaled windows, and can only be exited by using the toggle bindings.</p>
 <p>If interactive mode is disabled:
-- A view may be selected by clicking on it.<br />
-- The arrow keys can be used to change the currently selected view.<br />
-- <code>KEY_ENTER</code> will exit scale and focus the selected view.<br />
-- <code>KEY_ESC</code> will exit scale without changing focus.  </p>
+- A view may be selected by clicking on it.
+- The arrow keys can be used to change the currently selected view.
+- <code>KEY_ENTER</code> will exit scale and focus the selected view.
+- <code>KEY_ESC</code> will exit scale without changing focus.</p>
 <p>Default is <strong>false</strong>, i.e. not interactive.</p>
 <hr />
-<h6 id="scaleinactive_alpha"><code>scale.inactive_alpha</code></h6>
-<p>Controls the opacity of windows that are not selected.<br />
+<h4 id="scaleinactive_alpha"><code>scale.inactive_alpha</code></h4>
+<p>Controls the opacity of windows that are not selected.
 Default is <strong>0.75</strong> (75% opacity).</p>
 <hr />
-<h6 id="scaleallow_zoom"><code>scale.allow_zoom</code></h6>
-<p>Controls whether views may be bigger than their regular size when scaled.<br />
+<h4 id="scaleallow_zoom"><code>scale.allow_zoom</code></h4>
+<p>Controls whether views may be bigger than their regular size when scaled.
 Default is <strong>false</strong>.</p>
 <hr />
-<h6 id="scalemiddle_click_close"><code>scale.middle_click_close</code></h6>
-<p>Make middle click on a window close that window in both interactive and non-interactive mode.<br />
+<h4 id="scalemiddle_click_close"><code>scale.middle_click_close</code></h4>
+<p>Make middle click on a window close that window in both interactive and non-interactive mode.
 Default is <strong>false</strong>.</p>
 <hr />
-<h6 id="scaleinclude_minimized"><code>scale.include_minimized</code></h6>
-<p>Whether minimized windows should also be shown in scale.<br />
+<h4 id="scaleinclude_minimized"><code>scale.include_minimized</code></h4>
+<p>Whether minimized windows should also be shown in scale.
 Default is <strong>false</strong>.</p>
 <hr />
-<h6 id="scaleminimized_alpha"><code>scale.minimized_alpha</code></h6>
-<p>Controls the opacity of minimized windows when they are shown in scale.<br />
+<h4 id="scaleminimized_alpha"><code>scale.minimized_alpha</code></h4>
+<p>Controls the opacity of minimized windows when they are shown in scale.
 Default is <strong>0.45</strong>.</p>
 <hr />
-<h6 id="scaleclose_on_new_view"><code>scale.close_on_new_view</code></h6>
-<p>Automatically closes scale mode if a new window is opened.<br />
+<h4 id="scaleclose_on_new_view"><code>scale.close_on_new_view</code></h4>
+<p>Automatically closes scale mode if a new window is opened.
 Default is <strong>false</strong>.</p>
 <hr />
-<h6 id="scaleouter_margin"><code>scale.outer_margin</code></h6>
-<p>The margin between scaled windows and the screen edges.<br />
+<h4 id="scaleouter_margin"><code>scale.outer_margin</code></h4>
+<p>The margin between scaled windows and the screen edges.
 Default is <strong>0</strong> pixels.</p>
 <hr />
-<h6 id="scaletitle_overlay"><code>scale.title_overlay</code></h6>
-<p>Controls whether and how window titles are displayed as overlays in scale.<br />
-Possible values:<br />
-- <code>never</code>: never show titles.<br />
-- <code>mouse</code>: only show the title for the window under the pointer.<br />
-- <code>all</code>: show titles for all windows.  </p>
+<h4 id="scaletitle_overlay"><code>scale.title_overlay</code></h4>
+<p>Controls whether and how window titles are displayed as overlays in scale.
+Possible values:
+- <code>never</code>: never show titles.
+- <code>mouse</code>: only show the title for the window under the pointer.
+- <code>all</code>: show titles for all windows.</p>
 <p>Default is <strong>all</strong>.</p>
 <hr />
-<h6 id="scaletitle_font_size"><code>scale.title_font_size</code></h6>
-<p>Font size (in pixels) for the title overlays.<br />
+<h4 id="scaletitle_font_size"><code>scale.title_font_size</code></h4>
+<p>Font size (in pixels) for the title overlays.
 Default is <strong>16</strong>.</p>
 <hr />
-<h6 id="scaletitle_position"><code>scale.title_position</code></h6>
-<p>Controls the position of the window title overlay.<br />
-Possible values:<br />
-- <code>top</code><br />
-- <code>center</code><br />
-- <code>bottom</code>  </p>
+<h4 id="scaletitle_position"><code>scale.title_position</code></h4>
+<p>Controls the position of the window title overlay.
+Possible values:
+- <code>top</code>
+- <code>center</code>
+- <code>bottom</code></p>
 <p>Default is <strong>center</strong>.</p>
 <hr />
-<h6 id="scalebg_color"><code>scale.bg_color</code></h6>
-<p>Background color of the window title overlay text, given as RGBA values.<br />
+<h4 id="scalebg_color"><code>scale.bg_color</code></h4>
+<p>Background color of the window title overlay text, given as RGBA values.
 Default is <strong>0.1 0.1 0.1 0.9</strong>.</p>
 <hr />
-<h6 id="scaletext_color"><code>scale.text_color</code></h6>
-<p>Text color of the window title overlay, given as RGBA values.<br />
+<h4 id="scaletext_color"><code>scale.text_color</code></h4>
+<p>Text color of the window title overlay, given as RGBA values.
 Default is <strong>0.8 0.8 0.8 1.0</strong>.</p>
 <hr />
 <h4 id="window-rules">Window rules</h4>
@@ -8901,23 +8531,27 @@ rule_name = on &lt;event&gt; then &lt;command&gt;
 <p>See [<code>criteria</code>] for details on the available conditions.</p>
 <p>Note 1: <code>if &lt;criteria&gt;</code> can be omitted but special care must be taken, because the rules apply even for panel and background windows.
 Note 2: <code>rule_name</code> can take any value that is acceptable for a key of the ini format. It would be beneficial to have names that describe the action, like <code>make_term_sticky</code> or <code>&lt;app&gt;_maximize</code>, etc.</p>
-<p>Available events:
-- <code>created</code>: A new window has been opened.
-- <code>(un)maximized</code>: A window has been maximized/unmaximized.
-- <code>minimized</code>: A window has been minimized.
-- <code>fullscreened</code>: A window has been fullscreened.</p>
-<p>Available commands:
-- <code>set alpha &lt;alpha&gt;</code>: Set window opacity in range <code>[0, 1]</code>.
-- <code>set geometry X Y W H</code>: Set window geometry.
-- <code>set always_on_top</code>: Sets window to be always-on-top.
-- <code>(un)maximize</code>: Maximize or unmaximize the window.
-- <code>(un)minimize</code>: Minimize or restore the window.
-- <code>move X Y</code>: Move the window to <code>(X,Y)</code>.
-- <code>resize W H</code>: Resize the window to size <code>(W, H)</code>.
-- <code>snap &lt;slot&gt;</code>: Snap the view to a particular slot using the grid plugin. Available slots: <code>top_left</code>, <code>top</code>, <code>top_right</code>, <code>right</code>, <code>bottom_right</code>, <code>bottom</code>, <code>bottom_left</code>, <code>left</code>, <code>center</code>(same as maximize).
-- <code>assign_workspace X Y</code>: Move the view to workspace with coordinates <code>(X,Y)</code>. The top-left workspace has coordinate (0,0).
-- <code>sticky</code>: sticky across all workspaces.
-- <code>start_on_output</code>: start window on specific output. example: <code>start_on_output "HDMI-A-1"</code></p>
+<p>Available events:</p>
+<ul>
+<li><code>created</code>: A new window has been opened.</li>
+<li><code>(un)maximized</code>: A window has been maximized/unmaximized.</li>
+<li><code>minimized</code>: A window has been minimized.</li>
+<li><code>fullscreened</code>: A window has been fullscreened.</li>
+</ul>
+<p>Available commands:</p>
+<ul>
+<li><code>set alpha &lt;alpha&gt;</code>: Set window opacity in range <code>[0, 1]</code>.</li>
+<li><code>set geometry X Y W H</code>: Set window geometry.</li>
+<li><code>set always_on_top</code>: Sets window to be always-on-top.</li>
+<li><code>(un)maximize</code>: Maximize or unmaximize the window.</li>
+<li><code>(un)minimize</code>: Minimize or restore the window.</li>
+<li><code>move X Y</code>: Move the window to <code>(X,Y)</code>.</li>
+<li><code>resize W H</code>: Resize the window to size <code>(W, H)</code>.</li>
+<li><code>snap &lt;slot&gt;</code>: Snap the view to a particular slot using the grid plugin. Available slots: <code>top_left</code>, <code>top</code>, <code>top_right</code>, <code>right</code>, <code>bottom_right</code>, <code>bottom</code>, <code>bottom_left</code>, <code>left</code>, <code>center</code>(same as maximize).</li>
+<li><code>assign_workspace X Y</code>: Move the view to workspace with coordinates <code>(X,Y)</code>. The top-left workspace has coordinate (0,0).</li>
+<li><code>sticky</code>: sticky across all workspaces.</li>
+<li><code>start_on_output</code>: start window on specific output. example: <code>start_on_output "HDMI-A-1"</code></li>
+</ul>
 <p><strong>Example</strong> – Maximize each new alacritty window and set its opacity to 50%:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[window-rules]</span>
 <span class="na">rule_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">on created if app_id is &quot;Alacritty&quot; then maximize</span>
@@ -8931,48 +8565,48 @@ Note 2: <code>rule_name</code> can take any value that is acceptable for a key o
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/vswitch.xml"><code>metadata/vswitch.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/vswitch.cpp"><code>plugins/single_plugins/vswitch.cpp</code></a></li>
 </ul>
-<h6 id="vswitchbinding_down"><code>vswitch.binding_down</code></h6>
+<h4 id="vswitchbinding_down"><code>vswitch.binding_down</code></h4>
 <p>Switches to workspace down with the specified activator.</p>
-<h6 id="vswitchbinding_left"><code>vswitch.binding_left</code></h6>
+<h4 id="vswitchbinding_left"><code>vswitch.binding_left</code></h4>
 <p>Switches to workspace left with the specified activator.</p>
-<h6 id="vswitchbinding_right"><code>vswitch.binding_right</code></h6>
+<h4 id="vswitchbinding_right"><code>vswitch.binding_right</code></h4>
 <p>Switches to workspace right with the specified activator.</p>
-<h6 id="vswitchbinding_up"><code>vswitch.binding_up</code></h6>
+<h4 id="vswitchbinding_up"><code>vswitch.binding_up</code></h4>
 <p>Switches to workspace up with the specified activator.</p>
-<h6 id="vswitchbinding_last"><code>vswitch.binding_last</code></h6>
+<h4 id="vswitchbinding_last"><code>vswitch.binding_last</code></h4>
 <p>Switches to last active workspace with the specified activator.</p>
-<h6 id="vswitchwith_win_down"><code>vswitch.with_win_down</code></h6>
+<h4 id="vswitchwith_win_down"><code>vswitch.with_win_down</code></h4>
 <p>Switches to workspace down with the focused window with the specified activator. For Wayfire version 0.7.X and earlier, this was called <code>vswitch.binding_win_down</code></p>
-<h6 id="vswitchwith_win_left"><code>vswitch.with_win_left</code></h6>
+<h4 id="vswitchwith_win_left"><code>vswitch.with_win_left</code></h4>
 <p>Switches to workspace left with the focused window with the specified activator. For Wayfire version 0.7.X and earlier, this was called <code>vswitch.binding_win_left</code></p>
-<h6 id="vswitchwith_win_right"><code>vswitch.with_win_right</code></h6>
+<h4 id="vswitchwith_win_right"><code>vswitch.with_win_right</code></h4>
 <p>Switches to workspace right with the focused window with the specified activator. For Wayfire version 0.7.X and earlier, this was called <code>vswitch.binding_win_right</code></p>
-<h6 id="vswitchwith_win_up"><code>vswitch.with_win_up</code></h6>
+<h4 id="vswitchwith_win_up"><code>vswitch.with_win_up</code></h4>
 <p>Switches to workspace up with the focused window with the specified activator. For Wayfire version 0.7.X and earlier, this was called <code>vswitch.binding_win_up</code></p>
-<h6 id="vswitchsend_win_down"><code>vswitch.send_win_down</code></h6>
+<h4 id="vswitchsend_win_down"><code>vswitch.send_win_down</code></h4>
 <p>Send the focused window to the workspace below. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchsend_win_left"><code>vswitch.send_win_left</code></h6>
+<h4 id="vswitchsend_win_left"><code>vswitch.send_win_left</code></h4>
 <p>Send the focused window to the workspace on the left. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchsend_win_right"><code>vswitch.send_win_right</code></h6>
+<h4 id="vswitchsend_win_right"><code>vswitch.send_win_right</code></h4>
 <p>Send the focused window to the workspace on the right. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchsend_win_up"><code>vswitch.send_win_up</code></h6>
+<h4 id="vswitchsend_win_up"><code>vswitch.send_win_up</code></h4>
 <p>Send the focused window to the workspace above. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchbinding_n"><code>vswitch.binding_&lt;N&gt;</code></h6>
+<h4 id="vswitchbinding_n"><code>vswitch.binding_&lt;N&gt;</code></h4>
 <p>Sets the binding to go to workspace N. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchwith_win_n"><code>vswitch.with_win_&lt;N&gt;</code></h6>
+<h4 id="vswitchwith_win_n"><code>vswitch.with_win_&lt;N&gt;</code></h4>
 <p>Sets the binding to go to workspace N with currently focused window. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchsend_win_n"><code>vswitch.send_win_&lt;N&gt;</code></h6>
+<h4 id="vswitchsend_win_n"><code>vswitch.send_win_&lt;N&gt;</code></h4>
 <p>Sets the binding to move focused window to workspace N. Since Wayfire 0.8.0.</p>
-<h6 id="vswitchduration"><code>vswitch.duration</code></h6>
+<h4 id="vswitchduration"><code>vswitch.duration</code></h4>
 <p>Sets the duration of the workspace switching animation in milliseconds.
 The default is <strong>300</strong>.</p>
-<h6 id="vswitchgap"><code>vswitch.gap</code></h6>
+<h4 id="vswitchgap"><code>vswitch.gap</code></h4>
 <p>Sets the gap between workspaces when animating the transition between them.
 The default is <strong>20</strong>.</p>
-<h6 id="vswitchbackground"><code>vswitch.background</code></h6>
+<h4 id="vswitchbackground"><code>vswitch.background</code></h4>
 <p>Sets the background color of gaps.
 The default is <strong>0.1 0.1 0.1 1.0</strong>.</p>
-<h6 id="vswitchwraparound"><code>vswitch.wraparound</code></h6>
+<h4 id="vswitchwraparound"><code>vswitch.wraparound</code></h4>
 <p>Whether to wrap around when switching workspaces and there is no workspace in the desired direction.
 Default is <strong>false</strong>.</p>
 <h4 id="viewport-swipe">Viewport swipe</h4>
@@ -8982,48 +8616,48 @@ Default is <strong>false</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/vswipe.xml"><code>metadata/vswipe.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/vswipe.cpp"><code>plugins/single_plugins/vswipe.cpp</code></a></li>
 </ul>
-<h6 id="vswipebackground"><code>vswipe.background</code></h6>
+<h4 id="vswipebackground"><code>vswipe.background</code></h4>
 <p>Sets the background color.
 The default is <code>0.1 0.1 0.1 1.0</code>.</p>
-<h6 id="vswipedelta_threshold"><code>vswipe.delta_threshold</code></h6>
+<h4 id="vswipedelta_threshold"><code>vswipe.delta_threshold</code></h4>
 <p>Sets the delta threshold.
 The default is <strong>24.0</strong>.</p>
-<h6 id="vswipeduration"><code>vswipe.duration</code></h6>
+<h4 id="vswipeduration"><code>vswipe.duration</code></h4>
 <p>Sets the duration of the animation in milliseconds.
 The default is <strong>180</strong>.</p>
-<h6 id="vswipeenable_horizontal"><code>vswipe.enable_horizontal</code></h6>
+<h4 id="vswipeenable_horizontal"><code>vswipe.enable_horizontal</code></h4>
 <p>Enables or disables horizontal swiping.
 The default is <strong>true</strong>.</p>
-<h6 id="vswipeenable_smooth_transition"><code>vswipe.enable_smooth_transition</code></h6>
+<h4 id="vswipeenable_smooth_transition"><code>vswipe.enable_smooth_transition</code></h4>
 <p>Enables or disables smooth transition.
 The default is <strong>false</strong>.</p>
-<h6 id="vswipeenable_vertical"><code>vswipe.enable_vertical</code></h6>
+<h4 id="vswipeenable_vertical"><code>vswipe.enable_vertical</code></h4>
 <p>Enables or disables vertical swiping.
 The default is <strong>true</strong>.</p>
-<h6 id="vswipefingers"><code>vswipe.fingers</code></h6>
+<h4 id="vswipefingers"><code>vswipe.fingers</code></h4>
 <p>Specifies the number of fingers to swipe.
 The default is <strong>4</strong>.</p>
-<h6 id="vswipegap"><code>vswipe.gap</code></h6>
+<h4 id="vswipegap"><code>vswipe.gap</code></h4>
 <p>Changes the gap in pixels.
 The default is <strong>32.0</strong>.</p>
-<h6 id="vswipespeed_cap"><code>vswipe.speed_cap</code></h6>
+<h4 id="vswipespeed_cap"><code>vswipe.speed_cap</code></h4>
 <p>Sets the speed cap.
 The default is <strong>0.05</strong>.</p>
-<h6 id="vswipespeed_factor"><code>vswipe.speed_factor</code></h6>
+<h4 id="vswipespeed_factor"><code>vswipe.speed_factor</code></h4>
 <p>Sets the speed factor.
 The default is <strong>256.0</strong>.</p>
-<h6 id="vswipethreshold"><code>vswipe.threshold</code></h6>
+<h4 id="vswipethreshold"><code>vswipe.threshold</code></h4>
 <p>Sets the threshold.
 The default is <strong>0.35</strong>.</p>
 <h4 id="workspace-sets">Workspace sets</h4>
 <p>A plugin which provides multiple workspace grids which can be moved between outputs. See the <a href="https://youtu.be/QhGqlLK8Elo">demo on Youtube</a>.</p>
-<h6 id="wsetswset_n"><code>wsets.wset_&lt;N&gt;</code></h6>
+<h4 id="wsetswset_n"><code>wsets.wset_&lt;N&gt;</code></h4>
 <p>An activator binding to switch to workspace set <code>N</code>.
 Disabled by default.</p>
-<h6 id="wsetssend_to_wset_n"><code>wsets.send_to_wset_&lt;N&gt;</code></h6>
+<h4 id="wsetssend_to_wset_n"><code>wsets.send_to_wset_&lt;N&gt;</code></h4>
 <p>An activator binding to send the currently focused window to workspace set <code>N</code>.
 Disabled by default.</p>
-<h6 id="wsetslabel_duration"><code>wsets.label_duration</code></h6>
+<h4 id="wsetslabel_duration"><code>wsets.label_duration</code></h4>
 <p>The duration for which the notification showing the current workspace name should be shown after using a <code>wset_&lt;N&gt;</code> binding.
 Default is <strong>2000</strong> ms.</p>
 <h3 id="effects">Effects</h3>
@@ -9038,7 +8672,7 @@ Default is <strong>2000</strong> ms.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/animate/animate.cpp"><code>plugins/animate/animate.cpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/animate/fire/fire.cpp"><code>plugins/animate/fire/fire.cpp</code></a></li>
 </ul>
-<h6 id="animateclose_animation"><code>animate.close_animation</code></h6>
+<h4 id="animateclose_animation"><code>animate.close_animation</code></h4>
 <p>Specifies the type of animation when closing a window.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9048,42 +8682,42 @@ Default is <strong>2000</strong> ms.</p>
 <li><code>fire</code></li>
 </ul>
 <p>The default is <code>zoom</code>.</p>
-<h6 id="animateduration"><code>animate.duration</code></h6>
+<h4 id="animateduration"><code>animate.duration</code></h4>
 <p>Sets the duration of the animation in milliseconds.
 The default is <strong>500</strong>.</p>
-<h6 id="animateenabled_for"><code>animate.enabled_for</code></h6>
+<h4 id="animateenabled_for"><code>animate.enabled_for</code></h4>
 <p>Specifies the window types to be animated.
 The default is <code>(type is "toplevel" | (type is "x-or" &amp; focusable is true))</code>.</p>
 <p>See [<code>criteria</code>] for details.</p>
-<h6 id="animatefade_duration"><code>animate.fade_duration</code></h6>
+<h4 id="animatefade_duration"><code>animate.fade_duration</code></h4>
 <p>Sets the duration for the <em>fade</em> animation in milliseconds.
 Only applies for windows matched by <code>animate.fade_enabled_for</code>.
 The default is <strong>400</strong>.</p>
-<h6 id="animatefade_enabled_for"><code>animate.fade_enabled_for</code></h6>
+<h4 id="animatefade_enabled_for"><code>animate.fade_enabled_for</code></h4>
 <p>Specifies the window types to be animated with a fade effect.
 The default is <code>type is "overlay"</code>.</p>
 <p>See [<code>criteria</code>] for details.</p>
-<h6 id="animatefire_duration"><code>animate.fire_duration</code></h6>
+<h4 id="animatefire_duration"><code>animate.fire_duration</code></h4>
 <p>Sets the duration for the <em>fire</em> animation in milliseconds.
 Only applies for windows matched by <code>animate.fire_enabled_for</code>.
 The default is <strong>300</strong>.</p>
-<h6 id="animatefire_enabled_for"><code>animate.fire_enabled_for</code></h6>
+<h4 id="animatefire_enabled_for"><code>animate.fire_enabled_for</code></h4>
 <p>Specifies the window types to be animated with a fire effect.
 The default is <code>none</code>.</p>
 <p>See [<code>criteria</code>] for details.</p>
-<h6 id="animatefire_particles"><code>animate.fire_particles</code></h6>
+<h4 id="animatefire_particles"><code>animate.fire_particles</code></h4>
 <p>Sets the number of fire particles.
 The default is <strong>2000</strong>.</p>
-<h6 id="animatefire_particle_size"><code>animate.fire_particle_size</code></h6>
+<h4 id="animatefire_particle_size"><code>animate.fire_particle_size</code></h4>
 <p>Sets the size of the fire particles in pixels.
 The default is <strong>16.0</strong>.</p>
-<h6 id="animatefire_color"><code>animate.fire_color</code></h6>
+<h4 id="animatefire_color"><code>animate.fire_color</code></h4>
 <p>Sets the color of the fire effects, alpha is ignored.
 The default is <code>0.7 0.14 0.01 1.0</code>.</p>
-<h6 id="animaterandom_fire_color"><code>animate.random_fire_color</code></h6>
+<h4 id="animaterandom_fire_color"><code>animate.random_fire_color</code></h4>
 <p>Sets whether to use one solid color or select a random color for each particle.
 The default is <code>false</code>.</p>
-<h6 id="animateopen_animation"><code>animate.open_animation</code></h6>
+<h4 id="animateopen_animation"><code>animate.open_animation</code></h4>
 <p>Specifies the type of animation when opening a window.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9093,14 +8727,14 @@ The default is <code>false</code>.</p>
 <li><code>fire</code></li>
 </ul>
 <p>The default is <code>zoom</code>.</p>
-<h6 id="animatestartup_duration"><code>animate.startup_duration</code></h6>
+<h4 id="animatestartup_duration"><code>animate.startup_duration</code></h4>
 <p>Sets the duration of fading (in milliseconds) when Wayfire starts.
 The default is <strong>600</strong>.</p>
-<h6 id="animatezoom_duration"><code>animate.zoom_duration</code></h6>
+<h4 id="animatezoom_duration"><code>animate.zoom_duration</code></h4>
 <p>Sets the duration for the <em>zoom</em> animation in milliseconds.
 Only applies for windows matched by <code>animate.zoom_enabled_for</code>.
 The default is <strong>500</strong>.</p>
-<h6 id="animatezoom_enabled_for"><code>animate.zoom_enabled_for</code></h6>
+<h4 id="animatezoom_enabled_for"><code>animate.zoom_enabled_for</code></h4>
 <p>Specifies the window types to be animated with a zoom effect.
 The default is <code>none</code>.</p>
 <p>See [<code>criteria</code>] for details.</p>
@@ -9125,55 +8759,55 @@ Different combinations result in various levels of blur strength, performance an
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/blur/gaussian.cpp"><code>plugins/blur/gaussian.cpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/blur/kawase.cpp"><code>plugins/blur/kawase.cpp</code></a></li>
 </ul>
-<h6 id="blurbokeh_degrade"><code>blur.bokeh_degrade</code></h6>
+<h4 id="blurbokeh_degrade"><code>blur.bokeh_degrade</code></h4>
 <p>Sets the degrade value for the bokeh method.
 The value must be between <strong>1</strong> and <strong>5</strong>.
 The default is <strong>1</strong>.</p>
-<h6 id="blurbokeh_iterations"><code>blur.bokeh_iterations</code></h6>
+<h4 id="blurbokeh_iterations"><code>blur.bokeh_iterations</code></h4>
 <p>Sets the iterations for the bokeh method.
 The value must be between <strong>0</strong> and <strong>250</strong>.
 The default is <strong>15</strong>.</p>
-<h6 id="blurbokeh_offset"><code>blur.bokeh_offset</code></h6>
+<h4 id="blurbokeh_offset"><code>blur.bokeh_offset</code></h4>
 <p>Sets the offset value for the bokeh method.
 The value must be between <strong>0</strong> and <strong>50</strong>.
 The default is <strong>5</strong>.</p>
-<h6 id="blurbox_degrade"><code>blur.box_degrade</code></h6>
+<h4 id="blurbox_degrade"><code>blur.box_degrade</code></h4>
 <p>Sets the degrade value for the box method.
 The value must be between <strong>1</strong> and <strong>5</strong>.
 The default is <strong>1</strong>.</p>
-<h6 id="blurbox_iterations"><code>blur.box_iterations</code></h6>
+<h4 id="blurbox_iterations"><code>blur.box_iterations</code></h4>
 <p>Sets the iterations for the box method.
 The value must be between <strong>0</strong> and <strong>25</strong>.
 The default is <strong>2</strong>.</p>
-<h6 id="blurbox_offset"><code>blur.box_offset</code></h6>
+<h4 id="blurbox_offset"><code>blur.box_offset</code></h4>
 <p>Sets the offset value for the box method.
 The value must be between <strong>0</strong> and <strong>25</strong>.
 The default is <strong>2</strong>.</p>
-<h6 id="blurgaussian_degrade"><code>blur.gaussian_degrade</code></h6>
+<h4 id="blurgaussian_degrade"><code>blur.gaussian_degrade</code></h4>
 <p>Sets the degrade value for the gaussian method.
 The value must be between <strong>1</strong> and <strong>5</strong>.
 The default is <strong>1</strong>.</p>
-<h6 id="blurgaussian_iterations"><code>blur.gaussian_iterations</code></h6>
+<h4 id="blurgaussian_iterations"><code>blur.gaussian_iterations</code></h4>
 <p>Sets the iterations for the gaussian method.
 The value must be between <strong>0</strong> and <strong>25</strong>.
 The default is <strong>2</strong>.</p>
-<h6 id="blurgaussian_offset"><code>blur.gaussian_offset</code></h6>
+<h4 id="blurgaussian_offset"><code>blur.gaussian_offset</code></h4>
 <p>Sets the offset value for the gaussian method.
 The value must be between <strong>0</strong> and <strong>25</strong>.
 The default is <strong>2</strong>.</p>
-<h6 id="blurkawase_degrade"><code>blur.kawase_degrade</code></h6>
+<h4 id="blurkawase_degrade"><code>blur.kawase_degrade</code></h4>
 <p>Sets the degrade value for the kawase method.
 The value must be between <strong>1</strong> and <strong>5</strong>.
 The default is <strong>1</strong>.</p>
-<h6 id="blurkawase_iterations"><code>blur.kawase_iterations</code></h6>
+<h4 id="blurkawase_iterations"><code>blur.kawase_iterations</code></h4>
 <p>Sets the iterations for the kawase method.
 The value must be between <strong>0</strong> and <strong>10</strong>.
 The default is <strong>2</strong>.</p>
-<h6 id="blurkawase_offset"><code>blur.kawase_offset</code></h6>
+<h4 id="blurkawase_offset"><code>blur.kawase_offset</code></h4>
 <p>Sets the offset value for the kawase method.
 The value must be between <strong>0</strong> and <strong>25</strong>.
 The default is <strong>5</strong>.</p>
-<h6 id="blurmethod"><code>blur.method</code></h6>
+<h4 id="blurmethod"><code>blur.method</code></h4>
 <p>Chooses a blur algorithm.  The variants are as follows:</p>
 <ul>
 <li><code>bokeh</code></li>
@@ -9182,12 +8816,12 @@ The default is <strong>5</strong>.</p>
 <li><code>kawase</code></li>
 </ul>
 <p>The default is <code>kawase</code>.</p>
-<h6 id="blurmode"><code>blur.mode</code></h6>
+<h4 id="blurmode"><code>blur.mode</code></h4>
 <p>Specifies whether blurring should be automatic or manual.
 Possible values are <code>normal</code> and <code>toggle</code>.
 <code>normal</code> means automatic and <code>toggle</code> manual.
 The default is <code>normal</code>.</p>
-<h6 id="blurtoggle"><code>blur.toggle</code></h6>
+<h4 id="blurtoggle"><code>blur.toggle</code></h4>
 <p>Sets the shortcut to toggle blurring for a specific window.</p>
 <h4 id="decoration">Decoration</h4>
 <p>Default decorations around Wayland and <a href="https://wayland.freedesktop.org/xserver.html">XWayland</a> windows.</p>
@@ -9198,27 +8832,27 @@ The default is <code>normal</code>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/decor/deco-theme.cpp"><code>plugins/decor/deco-theme.cpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/decor/deco-theme.hpp"><code>plugins/decor/deco-theme.hpp</code></a></li>
 </ul>
-<h6 id="decorationactive_color"><code>decoration.active_color</code></h6>
+<h4 id="decorationactive_color"><code>decoration.active_color</code></h4>
 <p>Sets the color when the window is active.
 The default is <code>0.6 0.6 0.6 1.0</code>.</p>
 <p>For its counterpart, see <code>decoration.inactive_color</code>.</p>
-<h6 id="decorationborder_size"><code>decoration.border_size</code></h6>
+<h4 id="decorationborder_size"><code>decoration.border_size</code></h4>
 <p>Sets the border size in pixels.
 The default is <strong>4</strong>.</p>
-<h6 id="decorationbutton_order"><code>decoration.button_order</code></h6>
+<h4 id="decorationbutton_order"><code>decoration.button_order</code></h4>
 <p>Sets the order of the window buttons.
 The default is <code>minimize maximize close</code>.</p>
-<h6 id="decorationfont"><code>decoration.font</code></h6>
+<h4 id="decorationfont"><code>decoration.font</code></h4>
 <p>Sets the font to use for the title bars, via a Pango font description string (e.g. <code>Gentium Plus 12</code>).
 The default is <code>sans-serif</code>.</p>
-<h6 id="decorationinactive_color"><code>decoration.inactive_color</code></h6>
+<h4 id="decorationinactive_color"><code>decoration.inactive_color</code></h4>
 <p>Sets the color when the window is inactive.
 The default is <code>0.3 0.3 0.3 1.0</code>.</p>
 <p>For its counterpart, see <code>decoration.active_color</code>.</p>
-<h6 id="decorationtitle_height"><code>decoration.title_height</code></h6>
+<h4 id="decorationtitle_height"><code>decoration.title_height</code></h4>
 <p>Sets the height of the title bars in pixels.
 The default is <strong>30</strong>.</p>
-<h6 id="decorationignore_views"><code>decoration.ignore_views</code></h6>
+<h4 id="decorationignore_views"><code>decoration.ignore_views</code></h4>
 <p>Disables decoration for windows matching the specified criteria.
 The default is <code>none</code>.</p>
 <p>See [<code>criteria</code>] for details.</p>
@@ -9229,12 +8863,12 @@ The default is <code>none</code>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/fisheye.xml"><code>metadata/fisheye.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/fisheye.cpp"><code>plugins/single_plugins/fisheye.cpp</code></a></li>
 </ul>
-<h6 id="fisheyeradius"><code>fisheye.radius</code></h6>
+<h4 id="fisheyeradius"><code>fisheye.radius</code></h4>
 <p>Sets the border radius in pixels.
 The default is <strong>450.0</strong>.</p>
-<h6 id="fisheyetoggle"><code>fisheye.toggle</code></h6>
+<h4 id="fisheyetoggle"><code>fisheye.toggle</code></h4>
 <p>Toggles fisheye with the specified key.</p>
-<h6 id="fisheyezoom"><code>fisheye.zoom</code></h6>
+<h4 id="fisheyezoom"><code>fisheye.zoom</code></h4>
 <p>Sets the zoom factor.
 The default is <strong>7.0</strong>.</p>
 <h4 id="wobbly">Wobbly</h4>
@@ -9244,13 +8878,13 @@ The default is <strong>7.0</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/wobbly.xml"><code>metadata/wobbly.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/wobbly/wobbly.cpp"><code>plugins/wobbly/wobbly.cpp</code></a></li>
 </ul>
-<h6 id="wobblyfriction"><code>wobbly.friction</code></h6>
+<h4 id="wobblyfriction"><code>wobbly.friction</code></h4>
 <p>Sets the friction value.
 The default is <strong>3.0</strong>.</p>
-<h6 id="wobblyspring_k"><code>wobbly.spring_k</code></h6>
+<h4 id="wobblyspring_k"><code>wobbly.spring_k</code></h4>
 <p>Sets the spring constant.
 The default is <strong>8.0</strong>.</p>
-<h6 id="wobblygrid_resolution"><code>wobbly.grid_resolution</code></h6>
+<h4 id="wobblygrid_resolution"><code>wobbly.grid_resolution</code></h4>
 <p>Sets the grid resolution.
 The default is <strong>6</strong>.</p>
 <h4 id="window-rotate">Window rotate</h4>
@@ -9262,7 +8896,7 @@ Move the mouse cursor to the center of the window to reset the rotation.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/wrot.xml"><code>metadata/wrot.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/wrot.cpp"><code>plugins/single_plugins/wrot.cpp</code></a></li>
 </ul>
-<h6 id="wrotactivate"><code>wrot.activate</code></h6>
+<h4 id="wrotactivate"><code>wrot.activate</code></h4>
 <p>Rotates the window with the specified button.</p>
 <h3 id="general">General</h3>
 <h4 id="autostart">Autostart</h4>
@@ -9272,10 +8906,10 @@ Move the mouse cursor to the center of the window to reset the rotation.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/autostart.xml"><code>metadata/autostart.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/autostart.cpp"><code>plugins/single_plugins/autostart.cpp</code></a></li>
 </ul>
-<h6 id="autostartprogram-id-shell-command"><code>autostart.&lt;program-id&gt; &lt;shell-command&gt;</code></h6>
+<h4 id="autostartprogram-id-shell-command"><code>autostart.&lt;program-id&gt; &lt;shell-command&gt;</code></h4>
 <p>Executes shell command with <code>sh</code> on startup.
 The program ID does not matter, but must be different for distinct commands.</p>
-<h6 id="autostartautostart_wf_shell"><code>autostart.autostart_wf_shell</code></h6>
+<h4 id="autostartautostart_wf_shell"><code>autostart.autostart_wf_shell</code></h4>
 <p>Executes wf-panel and wf-background if they are not already in the autostart command list.
 The default is true which means that when no configuration file is preset, wayfire will try to run wf-shell.</p>
 <p><strong>Example</strong></p>
@@ -9307,12 +8941,12 @@ The default is true which means that when no configuration file is preset, wayfi
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/command.xml"><code>metadata/command.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/command.cpp"><code>plugins/single_plugins/command.cpp</code></a></li>
 </ul>
-<h6 id="commandbinding_id-key"><code>command.binding_&lt;id&gt; &lt;key&gt;</code></h6>
+<h4 id="commandbinding_id-key"><code>command.binding_&lt;id&gt; &lt;key&gt;</code></h4>
 <p>Associates <code>binding_&lt;id&gt;</code> to <code>command_&lt;id&gt;</code> when pressing the specified key.</p>
 <p>See also <code>command.repeatable_binding_&lt;id&gt;</code>.</p>
-<h6 id="commandcommand_id-shell-command"><code>command.command_&lt;id&gt; &lt;shell-command&gt;</code></h6>
+<h4 id="commandcommand_id-shell-command"><code>command.command_&lt;id&gt; &lt;shell-command&gt;</code></h4>
 <p>Executes shell command with <code>sh</code> on associated <code>binding_&lt;id&gt;</code>.</p>
-<h6 id="commandrepeatable_binding_id-key"><code>command.repeatable_binding_&lt;id&gt; &lt;key&gt;</code></h6>
+<h4 id="commandrepeatable_binding_id-key"><code>command.repeatable_binding_&lt;id&gt; &lt;key&gt;</code></h4>
 <p>Same as <code>command.binding_&lt;id&gt;</code>, but command is repeatable by holding the key.</p>
 <h4 id="core">Core</h4>
 <p>General options.</p>
@@ -9326,31 +8960,31 @@ The default is true which means that when no configuration file is preset, wayfi
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/src/output/workspace-impl.cpp"><code>src/output/workspace-impl.cpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/src/output/workspace-impl.cpp"><code>src/output/workspace-impl.cpp</code></a></li>
 </ul>
-<h6 id="corebackground_color"><code>core.background_color</code></h6>
+<h4 id="corebackground_color"><code>core.background_color</code></h4>
 <p>Sets the background color of workspaces.
 Visible when nothing is drawing the background.
 The default is <code>0.1 0.1 0.1 1.0</code>.</p>
-<h6 id="coreclose_top_view"><code>core.close_top_view</code></h6>
+<h4 id="coreclose_top_view"><code>core.close_top_view</code></h4>
 <p>Closes the currently focused window with the specified key.</p>
-<h6 id="coreplugins"><code>core.plugins</code></h6>
+<h4 id="coreplugins"><code>core.plugins</code></h4>
 <p>Loads the specified plugins, space-separated list.</p>
-<h6 id="corepreferred_decoration_mode"><code>core.preferred_decoration_mode</code></h6>
+<h4 id="corepreferred_decoration_mode"><code>core.preferred_decoration_mode</code></h4>
 <p>Sets the preferred <a href="https://en.wikipedia.org/wiki/Window_decoration">window decoration</a> mode.
 Possible values are <code>client</code> and <code>server</code>.
 <code>client</code> allows the client to draw its own decorations.
 The default is <code>client</code>.</p>
-<h6 id="corevheight"><code>core.vheight</code></h6>
+<h4 id="corevheight"><code>core.vheight</code></h4>
 <p>Sets the number of vertical workspaces.
 Currently, cannot be changed at runtime.
 The default is <strong>3</strong>.</p>
-<h6 id="corevwidth"><code>core.vwidth</code></h6>
+<h4 id="corevwidth"><code>core.vwidth</code></h4>
 <p>Sets the number of horizontal workspaces.
 Currently, cannot be changed at runtime.
 The default is <strong>3</strong>.</p>
-<h6 id="corexwayland"><code>core.xwayland</code></h6>
+<h4 id="corexwayland"><code>core.xwayland</code></h4>
 <p>Enables or disables <a href="https://wayland.freedesktop.org/xserver.html">XWayland</a> support, which allows X11 applications to be used.
 The default is <strong>true</strong>.</p>
-<h6 id="corexwayland_startup_script"><code>core.xwayland_startup_script</code></h6>
+<h4 id="corexwayland_startup_script"><code>core.xwayland_startup_script</code></h4>
 <p>Specifies the path to an executable script or binary, which is executed at the end of the XWayland startup process. A suggested example script for HiDPI with a scale factor of 2, and support for importing .Xresources from your home directory:</p>
 <div class="highlight"><pre><span></span><code>#!/bin/sh
 
@@ -9360,14 +8994,14 @@ fi
 
 xprop -root -f _XWAYLAND_GLOBAL_OUTPUT_SCALE 32c -set _XWAYLAND_GLOBAL_OUTPUT_SCALE 2
 </code></pre></div>
-<h6 id="coremax_render_time"><code>core.max_render_time</code></h6>
+<h4 id="coremax_render_time"><code>core.max_render_time</code></h4>
 <p>Controls a latency optimization. Lower values mean that Wayfire will reserve less time for redrawing an output, which leaves more time for clients to update themselves. Values that are too low however will lead to Wayfire missing a frame and lowering the refresh rate.
 Set to <code>-1</code> to disable.</p>
-<h6 id="corefocus_buttons"><code>core.focus_buttons</code></h6>
+<h4 id="corefocus_buttons"><code>core.focus_buttons</code></h4>
 <p>A list of buttons which will focus the view currently under the cursor and bring it to the front. Default is <strong><code>BTN_LEFT | BTN_RIGHT | BTN_MIDDLE</code></strong>.</p>
-<h6 id="corefocus_button_with_modifiers"><code>core.focus_button_with_modifiers</code></h6>
+<h4 id="corefocus_button_with_modifiers"><code>core.focus_button_with_modifiers</code></h4>
 <p>If set to <code>true</code>, the focus action described by <code>core.focus_buttons</code> will work even when modifiers are pressed. Default is <strong><code>false</code></strong>.</p>
-<h6 id="corefocus_buttons_passthrough"><code>core.focus_buttons_passthrough</code></h6>
+<h4 id="corefocus_buttons_passthrough"><code>core.focus_buttons_passthrough</code></h4>
 <p>Whether to send the actual button event to the client under the cursor for clicks handled by <code>core.focus_buttons</code>. Default is <strong><code>true</code></strong>.</p>
 <h4 id="input">Input</h4>
 <p>On a typical setup, the input configuration is managed in the config section <code>[input]</code>.</p>
@@ -9378,36 +9012,36 @@ Set to <code>-1</code> to disable.</p>
 <ul>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/src/core/seat/keyboard.cpp"><code>src/core/seat/keyboard.cpp</code></a></li>
 </ul>
-<h6 id="inputkb_repeat_delay"><code>input.kb_repeat_delay</code></h6>
+<h4 id="inputkb_repeat_delay"><code>input.kb_repeat_delay</code></h4>
 <p>Sets the amount of time a key must be held before it starts repeating.
 The default is <strong>400</strong>.</p>
-<h6 id="inputkb_repeat_rate"><code>input.kb_repeat_rate</code></h6>
+<h4 id="inputkb_repeat_rate"><code>input.kb_repeat_rate</code></h4>
 <p>Sets the frequency of key repeats once the <code>input.kb_repeat_delay</code> has passed.
 The default is <strong>40</strong>.</p>
-<h6 id="inputmodifier_binding_timeout"><code>input.modifier_binding_timeout</code></h6>
+<h4 id="inputmodifier_binding_timeout"><code>input.modifier_binding_timeout</code></h4>
 <p>Cancels modifier actions (like <kbd>Super</kbd> for the <a href="#expo"><code>expo</code></a> plugin) when held for the specified timeout (in milliseconds).
 Setting the value to <strong>0</strong> never cancels.
 The default is <strong>400</strong>.</p>
-<h6 id="inputkb_numlock_default_state"><code>input.kb_numlock_default_state</code></h6>
+<h4 id="inputkb_numlock_default_state"><code>input.kb_numlock_default_state</code></h4>
 <p>Default numlock state when Wayfire starts.
 The default is <strong>false</strong>.</p>
-<h6 id="inputkb_capslock_default_state"><code>input.kb_capslock_default_state</code></h6>
+<h4 id="inputkb_capslock_default_state"><code>input.kb_capslock_default_state</code></h4>
 <p>Default capslock state when Wayfire starts.
 The default is <strong>false</strong>.</p>
-<h6 id="inputxkb_layout"><code>input.xkb_layout</code></h6>
+<h4 id="inputxkb_layout"><code>input.xkb_layout</code></h4>
 <p>Sets the layout of the keyboard, like <code>us</code> or <code>fr</code>.
 Multiple layouts can be specified by separating them with commas.
 The default is <code>us</code>.</p>
-<h6 id="inputxkb_model"><code>input.xkb_model</code></h6>
+<h4 id="inputxkb_model"><code>input.xkb_model</code></h4>
 <p>Sets the model of the keyboard.
 This has an influence for some extra keys your keyboard might have.</p>
-<h6 id="inputxkb_options"><code>input.xkb_options</code></h6>
+<h4 id="inputxkb_options"><code>input.xkb_options</code></h4>
 <p>Sets extra XKB configuration options for the keyboard, such as keyboard shortcuts to <a href="https://man.archlinux.org/man/xkeyboard-config.7#Switching_to_another_layout">switch layouts</a>.
 Multiple options can be specified by separating them with commas.</p>
-<h6 id="inputxkb_rules"><code>input.xkb_rules</code></h6>
+<h4 id="inputxkb_rules"><code>input.xkb_rules</code></h4>
 <p>Sets files of rules to be used for keyboard mapping composition.
 The default is <code>evdev</code>.</p>
-<h6 id="inputxkb_variant"><code>input.xkb_variant</code></h6>
+<h4 id="inputxkb_variant"><code>input.xkb_variant</code></h4>
 <p>Sets the variant of the keyboard, like <code>dvorak</code> or <code>colemak</code>.</p>
 <h5 id="libinput-configuration">libinput configuration</h5>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/">libinput documentation</a> for details.</p>
@@ -9415,15 +9049,15 @@ The default is <code>evdev</code>.</p>
 <ul>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/src/core/seat/pointing-device.cpp"><code>src/core/seat/pointing-device.cpp</code></a></li>
 </ul>
-<h6 id="inputleft_handed_mode"><code>input.left_handed_mode</code></h6>
+<h4 id="inputleft_handed_mode"><code>input.left_handed_mode</code></h4>
 <p>Enables or disables left-handed mode.
 The default is <strong>false</strong>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/configuration.html#left-handed-mode">Left-handed Mode</a> for details.</p>
-<h6 id="inputmiddle_emulation"><code>input.middle_emulation</code></h6>
-<p>Enables or disables middle button emulation. Middle button emulation converts a simultaneous left and right button click into a middle button event. Enabling this option effectively disables the hardware middle button. 
+<h4 id="inputmiddle_emulation"><code>input.middle_emulation</code></h4>
+<p>Enables or disables middle button emulation. Middle button emulation converts a simultaneous left and right button click into a middle button event. Enabling this option effectively disables the hardware middle button.
 The default is <strong>false</strong>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/configuration.html#middle-button-emulation">Middle Button Emulation</a> for details.</p>
-<h6 id="inputmouse_accel_profile"><code>input.mouse_accel_profile</code></h6>
+<h4 id="inputmouse_accel_profile"><code>input.mouse_accel_profile</code></h4>
 <p>Sets the pointer acceleration profile.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9434,7 +9068,7 @@ The default is <strong>false</strong>.</p>
 </ul>
 <p>The default is <code>default</code>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/pointer-acceleration.html">Pointer acceleration</a> for details.</p>
-<h6 id="inputtouchpad_accel_profile"><code>input.touchpad_accel_profile</code></h6>
+<h4 id="inputtouchpad_accel_profile"><code>input.touchpad_accel_profile</code></h4>
 <p>Sets the touchpad acceleration profile.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9445,15 +9079,15 @@ The default is <strong>false</strong>.</p>
 </ul>
 <p>The default is <code>default</code>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/pointer-acceleration.html">Pointer acceleration</a> for details.</p>
-<h6 id="inputtap_to_click"><code>input.tap_to_click</code></h6>
+<h4 id="inputtap_to_click"><code>input.tap_to_click</code></h4>
 <p>Enables or disables tap-to-click.
 The default is <strong>true</strong>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/tapping.html">Tap-to-click behaviour</a> for details.</p>
-<h6 id="inputdrag_lock"><code>input.drag_lock</code></h6>
+<h4 id="inputdrag_lock"><code>input.drag_lock</code></h4>
 <p>Enables or disables drag lock.
 The default is <strong>false</strong>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/tapping.html#tap-and-drag">Tap-and-drag</a> for details.</p>
-<h6 id="inputclick_method"><code>input.click_method</code></h6>
+<h4 id="inputclick_method"><code>input.click_method</code></h4>
 <p>Changes the click method.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9464,7 +9098,7 @@ The default is <strong>false</strong>.</p>
 </ul>
 <p>The default is <code>default</code>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/clickpad-softbuttons.html">Clickpad software button behavior</a> for details.</p>
-<h6 id="inputscroll_method"><code>input.scroll_method</code></h6>
+<h4 id="inputscroll_method"><code>input.scroll_method</code></h4>
 <p>Changes the scroll method.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9476,32 +9110,32 @@ The default is <strong>false</strong>.</p>
 </ul>
 <p>The default is <code>default</code>.</p>
 <p>See <a href="https://wayland.freedesktop.org/libinput/doc/latest/scrolling.html">Scrolling</a> for details.</p>
-<h6 id="inputdisable_touchpad_while_typing"><code>input.disable_touchpad_while_typing</code></h6>
+<h4 id="inputdisable_touchpad_while_typing"><code>input.disable_touchpad_while_typing</code></h4>
 <p>Disables the touchpad while typing.
 The default is <strong>false</strong>.</p>
-<h6 id="inputdisable_touchpad_while_mouse"><code>input.disable_touchpad_while_mouse</code></h6>
+<h4 id="inputdisable_touchpad_while_mouse"><code>input.disable_touchpad_while_mouse</code></h4>
 <p>Disables the touchpad while using the mouse.
 The default is <strong>false</strong>.</p>
-<h6 id="inputnatural_scroll"><code>input.natural_scroll</code></h6>
+<h4 id="inputnatural_scroll"><code>input.natural_scroll</code></h4>
 <p>Enables or disables natural (inverted) scrolling.
 The default is <strong>false</strong>.</p>
-<h6 id="inputmouse_cursor_speed"><code>input.mouse_cursor_speed</code></h6>
+<h4 id="inputmouse_cursor_speed"><code>input.mouse_cursor_speed</code></h4>
 <p>Changes the pointer acceleration.
 The value must be between <strong>-1.0</strong> and <strong>1.00</strong>.
 The default is <strong>0.0</strong>.</p>
-<h6 id="inputtouchpad_cursor_speed"><code>input.touchpad_cursor_speed</code></h6>
+<h4 id="inputtouchpad_cursor_speed"><code>input.touchpad_cursor_speed</code></h4>
 <p>Changes the touchpad acceleration.
 The value must be between <strong>-1.0</strong> and <strong>1.00</strong>.
 The default is <strong>0.0</strong>.</p>
-<h6 id="inputmouse_scroll_speed"><code>input.mouse_scroll_speed</code></h6>
+<h4 id="inputmouse_scroll_speed"><code>input.mouse_scroll_speed</code></h4>
 <p>Changes the mouse scroll factor.
 Scroll speed will be scaled by the given value, which must be non-negative.
 The default is <strong>1.0</strong>.</p>
-<h6 id="inputtouchpad_scroll_speed"><code>input.touchpad_scroll_speed</code></h6>
+<h4 id="inputtouchpad_scroll_speed"><code>input.touchpad_scroll_speed</code></h4>
 <p>Changes the touchpad scroll factor.
 Scroll speed will be scaled by the given value, which must be non-negative.
 The default is <strong>1.0</strong>.</p>
-<h6 id="inputtablet_motion_mode"><code>input.tablet_motion_mode</code></h6>
+<h4 id="inputtablet_motion_mode"><code>input.tablet_motion_mode</code></h4>
 <p>Changes the tablet (example, by Wacom) motion mode.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9514,10 +9148,10 @@ The default is <strong>1.0</strong>.</p>
 <ul>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/src/core/seat/cursor.cpp"><code>src/core/seat/cursor.cpp</code></a></li>
 </ul>
-<h6 id="inputcursor_theme"><code>input.cursor_theme</code></h6>
+<h4 id="inputcursor_theme"><code>input.cursor_theme</code></h4>
 <p>Overrides the system default <code>XCursor</code> theme.
 The default is <code>default</code>.</p>
-<h6 id="inputcursor_size"><code>input.cursor_size</code></h6>
+<h4 id="inputcursor_size"><code>input.cursor_size</code></h4>
 <p>Overrides the system default <code>XCursor</code> size.
 The default is <strong>24</strong>.</p>
 <h5 id="input-device-specific-options">Input device-specific options</h5>
@@ -9540,13 +9174,13 @@ as the device name can also be a UDEV identifier.</p>
 </code></pre></div>
 <p>Last but not least, there are also <code>input-device:&lt;device_name&gt;</code> sections. These include additional options that can be set only <strong>per-device</strong>.</p>
 <p><code>[input-device:&lt;device-name&gt;]</code> is defined in <a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/input-device.xml"><code>metadata/input-device.xml</code></a>.</p>
-<h6 id="input-deviceoutput"><code>input-device.output</code></h6>
+<h4 id="input-deviceoutput"><code>input-device.output</code></h4>
 <p>You can map a specific input device to a specific output (useful for touchscreens).</p>
 <div class="highlight"><pre><span></span><code><span class="k">[input-device:Wacom Pen and multitouch sensor Finger]</span>
 <span class="na">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">eDP-1</span>
 </code></pre></div>
 <p>Replace <code>Wacom Pen and multitouch sensor Finger</code> with the name of your device and <code>eDP-1</code> with the name of the output you want to bind the input device to.</p>
-<h6 id="input-devicecalibration"><code>input-device.calibration</code></h6>
+<h4 id="input-devicecalibration"><code>input-device.calibration</code></h4>
 <p>Can be used to set a 2x3 calibration matrix for touchscreen devices.</p>
 <h4 id="output">Output</h4>
 <p>Output configuration.</p>
@@ -9559,15 +9193,15 @@ as the device name can also be a UDEV identifier.</p>
 <span class="na">transform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">normal</span>
 <span class="na">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">1.000000</span>
 </code></pre></div>
-<h6 id="outputposition"><code>&lt;output&gt;.position</code></h6>
+<h4 id="outputposition"><code>&lt;output&gt;.position</code></h4>
 <p>Places the specified output at the specific position in the global coordinate space.
 The format is <code>&lt;x&gt;,&lt;y&gt;</code> in pixels.</p>
-<h6 id="outputmode"><code>&lt;output&gt;.mode</code></h6>
+<h4 id="outputmode"><code>&lt;output&gt;.mode</code></h4>
 <p>Configures the specified output to use the given mode.
 Modes are a combination of width and height (in pixels) and a refresh rate (in hertz) that your display can be configured to use.
 The format is <code>&lt;width&gt;x&lt;height&gt;@&lt;rate&gt;</code>, or <code>off</code>, which turns the output off.</p>
 <p>Mode can also be <code>mirror &lt;output_name&gt;</code>, where <code>&lt;output_name&gt;</code> is the name of another output. In this case, the output will simply mirror the contents of the given output.</p>
-<h6 id="outputcustom_mode_n"><code>&lt;output&gt;.custom_mode_N</code></h6>
+<h4 id="outputcustom_mode_n"><code>&lt;output&gt;.custom_mode_N</code></h4>
 <p>Can be used to create a new mode for the output, even if the hardware does not report it. Valid values are modelines, can be generated with cvt. For example, if you want to add a <code>1280x720</code> mode:</p>
 <p>Output of <code>cvt 1280 720</code>:
 <div class="highlight"><pre><span></span><code># 1280x720 59.86 Hz (CVT 0.92M9) hsync: 44.77 kHz; pclk: 74.50 MHz
@@ -9578,9 +9212,9 @@ Modeline &quot;1280x720_60.00&quot;   74.50  1280 1344 1472 1664  720 723 728 74
 </code></pre></div></p>
 <p>Optionally append "interlaced" at the end of the modeline to enable interlaced scan.</p>
 <p>After that, you can use the new mode in the <code>&lt;output&gt;.mode</code> option or via kanshi.</p>
-<h6 id="outputscale"><code>&lt;output&gt;.scale</code></h6>
+<h4 id="outputscale"><code>&lt;output&gt;.scale</code></h4>
 <p>Scales the specified output by the specified scale factor.</p>
-<h6 id="outputtransform"><code>&lt;output&gt;.transform</code></h6>
+<h4 id="outputtransform"><code>&lt;output&gt;.transform</code></h4>
 <p>Sets the background transform for the specified output. Possible values are any members of the <code>wl_output::transform</code> enum, viewable <a href="https://wayland.app/protocols/wayland#wl_output:enum:transform">here</a>.</p>
 <h4 id="workarounds">Workarounds</h4>
 <p>Some hacks that might be required to make things work.</p>
@@ -9588,7 +9222,7 @@ Modeline &quot;1280x720_60.00&quot;   74.50  1280 1344 1472 1664  720 723 728 74
 <ul>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/workarounds.xml"><code>metadata/workarounds.xml</code></a></li>
 </ul>
-<h6 id="workaroundsapp_id_mode"><code>workarounds.app_id_mode</code></h6>
+<h4 id="workaroundsapp_id_mode"><code>workarounds.app_id_mode</code></h4>
 <p>Application ID mode.</p>
 <p>Specifies the application ID mode.</p>
 <p>Possible values are:</p>
@@ -9598,39 +9232,39 @@ Modeline &quot;1280x720_60.00&quot;   74.50  1280 1344 1472 1664  720 723 728 74
 <li><code>full</code></li>
 </ul>
 <p>The default is <code>stock</code>.</p>
-<h6 id="workaroundsall_dialogs_modal"><code>workarounds.all_dialogs_modal</code></h6>
+<h4 id="workaroundsall_dialogs_modal"><code>workarounds.all_dialogs_modal</code></h4>
 <p>Make all dialogs modal.</p>
 <p>If false, the main window can be focused even if it has a dialog. The dialog is nevertheless kept on top of the main window. Kwin defaults to false.</p>
 <p>The default is <code>true</code>.</p>
-<h6 id="workaroundsdynamic_repaint_delay"><code>workarounds.dynamic_repaint_delay</code></h6>
+<h4 id="workaroundsdynamic_repaint_delay"><code>workarounds.dynamic_repaint_delay</code></h4>
 <p>Allow dynamic repaint delay.</p>
 <p>If true, allows Wayfire to dynamically recalculate its max_render_time, i.e allow render time higher than max_render_time.</p>
 <p>The default is <code>true</code>.</p>
-<h6 id="workaroundsuse_external_output_configuration"><code>workarounds.use_external_output_configuration</code></h6>
+<h4 id="workaroundsuse_external_output_configuration"><code>workarounds.use_external_output_configuration</code></h4>
 <p>Use external output configuration instead of Wayfire's own.</p>
 <p>If true, Wayfire will not handle any configuration options for outputs in the config file once an
 external daemon like <a href="https://github.com/emersion/kanshi">kansi</a> sets the output configuration via the wlr-output-management protocol.
 Exceptions are made for options not available via wlr-output-management, like output mirroring and custom modelines.</p>
 <p>The default is <code>false</code>.</p>
-<h6 id="workaroundsremove_output_limits"><code>workarounds.remove_output_limits</code></h6>
+<h4 id="workaroundsremove_output_limits"><code>workarounds.remove_output_limits</code></h4>
 <p>Allow views to overlap between multiple outputs. Many of the core plugins will not behave properly with this option set!</p>
 <p>The default is <code>false</code>.</p>
-<h6 id="workaroundsforce_preferred_decoration_mode"><code>workarounds.force_preferred_decoration_mode</code></h6>
+<h4 id="workaroundsforce_preferred_decoration_mode"><code>workarounds.force_preferred_decoration_mode</code></h4>
 <p>Force xdg-decoration clients to use the compositor-preferred decoration mode regardless of the client's preference.</p>
 <p>The default is <code>false</code>.</p>
-<h6 id="workaroundsenable_so_unloading"><code>workarounds.enable_so_unloading</code></h6>
+<h4 id="workaroundsenable_so_unloading"><code>workarounds.enable_so_unloading</code></h4>
 <p>Enable calling dlclose() when a plugin is unloaded. Note that this may not work well with all plugins.</p>
 <p>The default is <code>false</code>.</p>
-<h6 id="workaroundsdiscard_command_output"><code>workarounds.discard_command_output</code></h6>
+<h4 id="workaroundsdiscard_command_output"><code>workarounds.discard_command_output</code></h4>
 <p>Discard output from commands invoked by Wayfire, so that they don't end up in the logs.</p>
 <p>The default is <code>true</code>.</p>
-<h6 id="workaroundsenable_input_method_v2"><code>workarounds.enable_input_method_v2</code></h6>
+<h4 id="workaroundsenable_input_method_v2"><code>workarounds.enable_input_method_v2</code></h4>
 <p>Enable support for the newer input-method-v2 protocol. Note that the input-method-v1 protocol works better in many cases.</p>
 <p>The default is <code>false</code>.</p>
-<h6 id="workaroundsenable_opaque_region_damage_optimizations"><code>workarounds.enable_opaque_region_damage_optimizations</code></h6>
+<h4 id="workaroundsenable_opaque_region_damage_optimizations"><code>workarounds.enable_opaque_region_damage_optimizations</code></h4>
 <p>Enable certain damage optimizations which are based on a surfaces' opaque regions. In some cases, this optimization might give unexpected results (i.e background app stops updating) even though this is fine according to Wayland's protocol.</p>
 <p>The default is <code>false</code>.</p>
-<h6 id="workaroundsforce_frame_sync"><code>workarounds.force_frame_sync</code></h6>
+<h4 id="workaroundsforce_frame_sync"><code>workarounds.force_frame_sync</code></h4>
 <p>This option can be used to workaround driver bugs that cause rendering artifacts, though can cause more resource usage. Leave disabled if unsure.</p>
 <p>The default is <code>false</code>.</p>
 <h3 id="utility">Utility</h3>
@@ -9657,8 +9291,8 @@ Exceptions are made for options not available via wlr-output-management, like ou
 <h5 id="xdg-activationtimeout"><code>xdg-activation.timeout</code></h5>
 <p>Timeout (in seconds) for activation requests to expire. Default is 30s.</p>
 <h4 id="input-method-protocols">Input Method Protocols</h4>
-<p>Implementations of the <a href="https://wayland.app/protocols/input-method-unstable-v2">Input method v2 protocol</a> and the <a href="https://wayland.app/protocols/text-input-unstable-v3">Text input protocol</a>. This allows fcitx5 to work properly with Chromium without XWayland, GTK IM Module and QT IM Module. </p>
-<p>Note: Configure <code>~/.config/chromium-flags.conf</code> if you are using Chromium: 
+<p>Implementations of the <a href="https://wayland.app/protocols/input-method-unstable-v2">Input method v2 protocol</a> and the <a href="https://wayland.app/protocols/text-input-unstable-v3">Text input protocol</a>. This allows fcitx5 to work properly with Chromium without XWayland, GTK IM Module and QT IM Module.</p>
+<p>Note: Configure <code>~/.config/chromium-flags.conf</code> if you are using Chromium:
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>vim<span class="w"> </span>~/.config/chromium-flags.conf
 --enable-wayland-ime<span class="w"> </span>--wayland-text-input-version<span class="o">=</span><span class="m">3</span>
 </code></pre></div></p>
@@ -9674,9 +9308,9 @@ Exceptions are made for options not available via wlr-output-management, like ou
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/fast-switcher.xml"><code>metadata/fast-switcher.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/fast-switcher.cpp"><code>plugins/single_plugins/fast-switcher.cpp</code></a></li>
 </ul>
-<h6 id="fast-switcheractivate"><code>fast-switcher.activate</code></h6>
+<h4 id="fast-switcheractivate"><code>fast-switcher.activate</code></h4>
 <p>Activates fast switcher, switching between windows in forward order, using the specified key.</p>
-<h6 id="fast-switcheractivate_backward"><code>fast-switcher.activate_backward</code></h6>
+<h4 id="fast-switcheractivate_backward"><code>fast-switcher.activate_backward</code></h4>
 <p>Activates fast switcher, switching between windows in reverse order, using the specified key.</p>
 <h4 id="grid">Grid</h4>
 <p>A plugin to position the windows in certain regions of the output.</p>
@@ -9686,39 +9320,39 @@ Exceptions are made for options not available via wlr-output-management, like ou
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/grid.xml"><code>metadata/grid.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/grid.cpp"><code>plugins/single_plugins/grid.cpp</code></a></li>
 </ul>
-<h6 id="gridduration"><code>grid.duration</code></h6>
+<h4 id="gridduration"><code>grid.duration</code></h4>
 <p>Sets the duration of the animation in milliseconds.
 The default is <strong>300</strong>.</p>
-<h6 id="gridrestore"><code>grid.restore</code></h6>
+<h4 id="gridrestore"><code>grid.restore</code></h4>
 <p>Restores the window to its original size and position with the specified activator.</p>
-<h6 id="gridslot_b"><code>grid.slot_b</code></h6>
+<h4 id="gridslot_b"><code>grid.slot_b</code></h4>
 <p>Positions the window in the bottom edge of the screen with the specified activator.
 The window takes half of the screen.</p>
-<h6 id="gridslot_bl"><code>grid.slot_bl</code></h6>
+<h4 id="gridslot_bl"><code>grid.slot_bl</code></h4>
 <p>Positions the window in the bottom left corner of the screen with the specified activator.
 The window takes 1/4 of the screen.</p>
-<h6 id="gridslot_br"><code>grid.slot_br</code></h6>
+<h4 id="gridslot_br"><code>grid.slot_br</code></h4>
 <p>Positions the window in the bottom right corner of the screen with the specified activator.
 The window takes 1/4 of the screen.</p>
-<h6 id="gridslot_c"><code>grid.slot_c</code></h6>
+<h4 id="gridslot_c"><code>grid.slot_c</code></h4>
 <p>Positions the window in the center of the screen with the specified activator.
 The window is maximized.</p>
-<h6 id="gridslot_l"><code>grid.slot_l</code></h6>
+<h4 id="gridslot_l"><code>grid.slot_l</code></h4>
 <p>Positions the window in the left edge of the screen with the specified activator.
 The window takes half of the screen.</p>
-<h6 id="gridslot_r"><code>grid.slot_r</code></h6>
+<h4 id="gridslot_r"><code>grid.slot_r</code></h4>
 <p>Positions the window in the right edge of the screen with the specified activator.
 The window takes half of the screen.</p>
-<h6 id="gridslot_t"><code>grid.slot_t</code></h6>
+<h4 id="gridslot_t"><code>grid.slot_t</code></h4>
 <p>Positions the window in the top edge of the screen with the specified activator.
 The window takes half of the screen.</p>
-<h6 id="gridslot_tl"><code>grid.slot_tl</code></h6>
+<h4 id="gridslot_tl"><code>grid.slot_tl</code></h4>
 <p>Positions the window in the top left corner of the screen with the specified activator.
 The window takes 1/4 of the screen.</p>
-<h6 id="gridslot_tr"><code>grid.slot_tr</code></h6>
+<h4 id="gridslot_tr"><code>grid.slot_tr</code></h4>
 <p>Positions the window in the top right corner of the screen with the specified activator.
 The window takes 1/4 of the screen.</p>
-<h6 id="gridtype"><code>grid.type</code></h6>
+<h4 id="gridtype"><code>grid.type</code></h4>
 <p>Sets the type of the animation.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9736,22 +9370,22 @@ The window takes 1/4 of the screen.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/move.cpp"><code>plugins/single_plugins/move.cpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/move-snap-helper.hpp"><code>plugins/single_plugins/move-snap-helper.hpp</code></a></li>
 </ul>
-<h6 id="moveactivate"><code>move.activate</code></h6>
+<h4 id="moveactivate"><code>move.activate</code></h4>
 <p>When the specified button is held down, you can drag windows to move them.</p>
-<h6 id="moveenable_snap"><code>move.enable_snap</code></h6>
+<h4 id="moveenable_snap"><code>move.enable_snap</code></h4>
 <p>Enables or disables snapping the window being moved to an edge of the screen.
 The default is <strong>true</strong>. Requires the <code>grid</code> plugin to also be enabled.</p>
-<h6 id="moveenable_snap_off"><code>move.enable_snap_off</code></h6>
+<h4 id="moveenable_snap_off"><code>move.enable_snap_off</code></h4>
 <p>Enables or disables snapping off the window being grabbed from an edge of the screen.
 The default is <strong>true</strong>.</p>
-<h6 id="movejoin_views"><code>move.join_views</code></h6>
+<h4 id="movejoin_views"><code>move.join_views</code></h4>
 <p>Disallows independently moving dialogues.
 The default is <strong>false</strong>.</p>
-<h6 id="movesnap_off_threshold"><code>move.snap_off_threshold</code></h6>
+<h4 id="movesnap_off_threshold"><code>move.snap_off_threshold</code></h4>
 <p>When attempting to move a snapped window, this option requires the user to move at least the specified amount of pixels before the window actually moves.
 This only takes effect with <code>move.enable_snap_off</code>.
 The default is <strong>10</strong>.</p>
-<h6 id="movesnap_threshold"><code>move.snap_threshold</code></h6>
+<h4 id="movesnap_threshold"><code>move.snap_threshold</code></h4>
 <p>Sets the amount of pixels from the edge of the screen for which aero-snap gets triggered.
 The default is <strong>10</strong>.</p>
 <h4 id="place">Place</h4>
@@ -9761,7 +9395,7 @@ The default is <strong>10</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/place.xml"><code>metadata/place.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/place.cpp"><code>plugins/single_plugins/place.cpp</code></a></li>
 </ul>
-<h6 id="placemode"><code>place.mode</code></h6>
+<h4 id="placemode"><code>place.mode</code></h4>
 <p>Specifies how to position newly opened windows.</p>
 <p>Possible values are:</p>
 <ul>
@@ -9772,7 +9406,7 @@ The default is <strong>10</strong>.</p>
 <p>The default is <code>center</code>.</p>
 <h4 id="preserve-output">Preserve output</h4>
 <p>Some monitors and/or GPUs disconnect the outputs during DPMS, which can result in all of your windows ending up on one output after waking them from sleep. This plugin prevents that from happening.</p>
-<h6 id="preserve-outputlast_output_focus_timeout"><code>preserve-output.last_output_focus_timeout</code></h6>
+<h4 id="preserve-outputlast_output_focus_timeout"><code>preserve-output.last_output_focus_timeout</code></h4>
 <p>When an output is destroyed, if it is focused then it is remembered as the focused output, unless another output was already remembered as the focused output in the last X milliseconds. This option sets that number of milliseconds.</p>
 <p>The default is <strong>10000</strong> (10 seconds).</p>
 <h4 id="simple-tile">Simple tile</h4>
@@ -9783,26 +9417,26 @@ The plugin is meant to contain only the basics.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/simple-tile.xml"><code>metadata/simple-tile.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/tile/tile-plugin.cpp"><code>plugins/tile/tile-plugin.cpp</code></a></li>
 </ul>
-<h6 id="simple-tilebutton_move"><code>simple-tile.button_move</code></h6>
+<h4 id="simple-tilebutton_move"><code>simple-tile.button_move</code></h4>
 <p>When the specified button is held down, you can drag and drop tiled windows to reorder them and to change the tiling direction.</p>
-<h6 id="simple-tilebutton_resize"><code>simple-tile.button_resize</code></h6>
+<h4 id="simple-tilebutton_resize"><code>simple-tile.button_resize</code></h4>
 <p>When the specified button is held down, you can drag tiled windows to resize them.</p>
-<h6 id="simple-tilekeep_fullscreen_on_adjacent"><code>simple-tile.keep_fullscreen_on_adjacent</code></h6>
+<h4 id="simple-tilekeep_fullscreen_on_adjacent"><code>simple-tile.keep_fullscreen_on_adjacent</code></h4>
 <p>Specifies whether to keep fullscreen state when changing the focus.
 If <strong>true</strong>, the next focused window will also get fullscreen.
 If <strong>false</strong>, leaves fullscreen.
 The default is <strong>true</strong>.</p>
-<h6 id="simple-tilekey_focus_above"><code>simple-tile.key_focus_above</code></h6>
+<h4 id="simple-tilekey_focus_above"><code>simple-tile.key_focus_above</code></h4>
 <p>Moves focus to the window above with the specified key.</p>
-<h6 id="simple-tilekey_focus_below"><code>simple-tile.key_focus_below</code></h6>
+<h4 id="simple-tilekey_focus_below"><code>simple-tile.key_focus_below</code></h4>
 <p>Moves focus to the window below with the specified key.</p>
-<h6 id="simple-tilekey_focus_left"><code>simple-tile.key_focus_left</code></h6>
+<h4 id="simple-tilekey_focus_left"><code>simple-tile.key_focus_left</code></h4>
 <p>Moves focus to the window left with the specified key.</p>
-<h6 id="simple-tilekey_focus_right"><code>simple-tile.key_focus_right</code></h6>
+<h4 id="simple-tilekey_focus_right"><code>simple-tile.key_focus_right</code></h4>
 <p>Moves focus to the window right with the specified key.</p>
-<h6 id="simple-tilekey_toggle"><code>simple-tile.key_toggle</code></h6>
+<h4 id="simple-tilekey_toggle"><code>simple-tile.key_toggle</code></h4>
 <p>Toggles tiling mode with the specified key.</p>
-<h6 id="simple-tiletile_by_default"><code>simple-tile.tile_by_default</code></h6>
+<h4 id="simple-tiletile_by_default"><code>simple-tile.tile_by_default</code></h4>
 <p>Enables tiling for windows matching the specified criteria.
 The default is <code>all</code>.</p>
 <p>See [<code>criteria</code>] for details.</p>
@@ -9820,11 +9454,11 @@ tile_by_default = !(title contains &quot;PartialTitle&quot;)
 tile_by_default = !(title is &quot;Floating Notes&quot;)
 </code></pre></div></p>
 <p>This will ensure that any window with the exact title "Floating Notes" remains floating while all others are tiled.</p>
-<h6 id="simple-tileinner_gap_size"><code>simple-tile.inner_gap_size</code></h6>
+<h4 id="simple-tileinner_gap_size"><code>simple-tile.inner_gap_size</code></h4>
 <p>Controls the gap size (free space) between adjacent tiled views. Default is 5 pixels.</p>
-<h6 id="simple-tileouter_horiz_gap_size"><code>simple-tile.outer_horiz_gap_size</code></h6>
+<h4 id="simple-tileouter_horiz_gap_size"><code>simple-tile.outer_horiz_gap_size</code></h4>
 <p>Controls the gap size on the left and the right edge of the workspace. Default is 0 pixels.</p>
-<h6 id="simple-tileouter_vert_gap_size"><code>simple-tile.outer_vert_gap_size</code></h6>
+<h4 id="simple-tileouter_vert_gap_size"><code>simple-tile.outer_vert_gap_size</code></h4>
 <p>Controls the gap size on the top and the bottom edge of the workspace. Default is 0 pixels.</p>
 <h4 id="switcher">Switcher</h4>
 <p>A plugin to change active window with an animation.</p>
@@ -9835,20 +9469,20 @@ tile_by_default = !(title is &quot;Floating Notes&quot;)
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/switcher.cpp"><code>plugins/single_plugins/switcher.cpp</code></a></li>
 <li><a href="https://github.com/WayfireWM/wf-config/blob/master/src/types.cpp"><code>wf-config/src/types.cpp</code></a></li>
 </ul>
-<h6 id="switchergesture_toggle"><code>switcher.gesture_toggle</code></h6>
+<h4 id="switchergesture_toggle"><code>switcher.gesture_toggle</code></h4>
 <p>Toggles the switcher with the specified gesture.
 The default is <code>edge-swipe down 3</code>.</p>
-<h6 id="switchernext_view"><code>switcher.next_view</code></h6>
+<h4 id="switchernext_view"><code>switcher.next_view</code></h4>
 <p>Switches to the next view with the specified key.</p>
-<h6 id="switcherprev_view"><code>switcher.prev_view</code></h6>
+<h4 id="switcherprev_view"><code>switcher.prev_view</code></h4>
 <p>Switches to the previous view with the specified key.</p>
-<h6 id="switcherspeed"><code>switcher.speed</code></h6>
+<h4 id="switcherspeed"><code>switcher.speed</code></h4>
 <p>Sets the duration of the animation in milliseconds.
 The default is <strong>500</strong>.</p>
-<h6 id="switchertouch_sensitivity"><code>switcher.touch_sensitivity</code></h6>
+<h4 id="switchertouch_sensitivity"><code>switcher.touch_sensitivity</code></h4>
 <p>Sets the touch sensitivity.
 The default is <strong>1.0</strong>.</p>
-<h6 id="switcherview_thumbnail_scale"><code>switcher.view_thumbnail_scale</code></h6>
+<h4 id="switcherview_thumbnail_scale"><code>switcher.view_thumbnail_scale</code></h4>
 <p>Sets the thumbnail size.
 The default is <strong>1.0</strong>.</p>
 <h4 id="resize">Resize</h4>
@@ -9859,25 +9493,25 @@ The default is <strong>1.0</strong>.</p>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/resize.xml"><code>metadata/resize.xml</code></a></li>
 <li><a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/single_plugins/resize.cpp"><code>plugins/single_plugins/resize.cpp</code></a></li>
 </ul>
-<h6 id="resizeactivate"><code>resize.activate</code></h6>
+<h4 id="resizeactivate"><code>resize.activate</code></h4>
 <p>When the specified button is held down, you can drag windows to resize them.</p>
 <h4 id="wm-actions">WM-Actions</h4>
 <p>A plugin providing various window management functions.
 - <a href="https://github.com/WayfireWM/wayfire/blob/master/metadata/wm-actions.xml"><code>metadata/wm-actions.xml</code></a>
 - <a href="https://github.com/WayfireWM/wayfire/blob/master/plugins/wm-actions/wm-actions.cpp"><code>plugins/wm-actions.cpp</code></a></p>
-<h6 id="wm-actionstoggle_fullscreen"><code>wm-actions.toggle_fullscreen</code></h6>
+<h4 id="wm-actionstoggle_fullscreen"><code>wm-actions.toggle_fullscreen</code></h4>
 <p>Makes focused view fullscreen with the specified key.</p>
-<h6 id="wm-actionstoggle_always_on_top"><code>wm-actions.toggle_always_on_top</code></h6>
+<h4 id="wm-actionstoggle_always_on_top"><code>wm-actions.toggle_always_on_top</code></h4>
 <p>Toggles the always-on-top state of the focused view (as a keybinding) or the view clicked on (as a button binding).</p>
-<h6 id="wm-actionstoggle_sticky"><code>wm-actions.toggle_sticky</code></h6>
+<h4 id="wm-actionstoggle_sticky"><code>wm-actions.toggle_sticky</code></h4>
 <p>Toggle the sticky state of a view.</p>
-<h6 id="wm-actionstoggle_maximize"><code>wm-actions.toggle_maximize</code></h6>
+<h4 id="wm-actionstoggle_maximize"><code>wm-actions.toggle_maximize</code></h4>
 <p>Toggle the maximize state of the active view.</p>
-<h6 id="wm-actionsminimize"><code>wm-actions.minimize</code></h6>
+<h4 id="wm-actionsminimize"><code>wm-actions.minimize</code></h4>
 <p>Minimize the active view.</p>
-<h6 id="wm-actionstoggle_showdesktop"><code>wm-actions.toggle_showdesktop</code></h6>
+<h4 id="wm-actionstoggle_showdesktop"><code>wm-actions.toggle_showdesktop</code></h4>
 <p>Show the desktop.</p>
-<h6 id="wm-actionssend_to_back"><code>wm-actions.send_to_back</code></h6>
+<h4 id="wm-actionssend_to_back"><code>wm-actions.send_to_back</code></h4>
 <p>Send the active view to behind all other views.</p>
 
 
@@ -9995,10 +9629,10 @@ The default is <strong>1.0</strong>.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.tracking", "navigation.expand", "navigation.footer"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "navigation.tracking", "navigation.expand", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

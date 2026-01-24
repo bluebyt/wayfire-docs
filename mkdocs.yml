@@ -42,6 +42,7 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets
     - pymdownx.tabbed
+    - pymdownx.keys
     - attr_list
     - pymdownx.emoji:
           emoji_index: !!python/name:material.extensions.emoji.twemoji

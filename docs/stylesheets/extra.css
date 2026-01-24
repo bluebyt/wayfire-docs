@@ -1,17 +1,35 @@
 /* 2. Apply font size to the typeset container */
 .md-typeset {
-    font-size: 19px; /* For testing, 48px is huge and should be obvious */
+    font-size: 19px;
     line-height: 1.65;
 }
 
-/* Reduce space below the H1 title */
 .md-typeset h1 {
-    margin-bottom: 0.5rem; /* Default is often 1.25rem or higher */
+    margin-bottom: 0.5rem;
 }
 
-/* Reduce space above the paragraph */
 .md-typeset p {
     margin-top: 0;
+}
+
+/* Subtle 3D keyboard keys */
+.md-typeset .keys kbd,
+.md-typeset kbd.keys {
+    background: linear-gradient(
+        to bottom,
+        var(--md-code-bg-color),
+        color-mix(in srgb, var(--md-code-bg-color) 85%, black)
+    );
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.3rem;
+    box-shadow:
+        0 0.15rem 0 var(--md-default-fg-color--lightest),
+        inset 0 0.05rem 0 rgba(255, 255, 255, 0.25);
+    color: var(--md-default-fg-color);
+    font-size: 0.85em;
+    padding: 0.15em 0.5em;
+    vertical-align: middle;
+    text-shadow: 0 0.02rem 0 rgba(0, 0, 0, 0.2);
 }
 
 /*

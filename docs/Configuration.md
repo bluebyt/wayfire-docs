@@ -1407,7 +1407,7 @@ The default is **40**.
 
 #### `input.modifier_binding_timeout`
 
-Cancels modifier actions (like <kbd>Super</kbd> for the [`expo`](#expo) plugin) when held for the specified timeout (in milliseconds).
+Cancels modifier actions (like ++super++ for the [`expo`](#expo) plugin) when held for the specified timeout (in milliseconds).
 Setting the value to **0** never cancels.
 The default is **400**.
 
