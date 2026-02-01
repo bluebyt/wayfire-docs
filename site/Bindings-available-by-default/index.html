@@ -1694,29 +1694,29 @@
 
 
 <h1 id="bindings-available-by-default">Bindings available by default</h1>
-<p>The following bindings are available by default in 0.8.0, i.e. without needing to specify them in <code>wayfire.ini</code>. Capital-letter representations of alphabetical keys are used for clarity; use of <kbd>&lt;shift&gt;</kbd> is not implied nor required.</p>
+<p>The following bindings are available by default in 0.8.0, i.e. without needing to specify them in <code>wayfire.ini</code>. Capital-letter representations of alphabetical keys are used for clarity; use of <span class="keys"><kbd class="key-shift">Shift</kbd></span> is not implied nor required.</p>
 <h2 id="core">Core</h2>
 <h3 id="close-focused-window">Close focused window.</h3>
 <ul>
-<li><code>core.close_top_view</code> = <kbd>&lt;super&gt;</kbd> + <kbd>Q</kbd> | <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;f4&gt;</kbd></li>
+<li><code>core.close_top_view</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-q">Q</kbd></span> | <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-f4">F4</kbd></span></li>
 </ul>
 <h3 id="focus-window-with-mouse">Focus window with mouse.</h3>
 <ul>
-<li><code>core.focus_buttons</code> = <kbd>&lt;mouse-left&gt;</kbd> | <kbd>&lt;mouse-middle&gt;</kbd> | <kbd>&lt;mouse-right&gt;</kbd></li>
+<li><code>core.focus_buttons</code> = <code>mouse-left</code> | <code>mouse-middle</code> | <code>mouse-right</code></li>
 </ul>
 <h2 id="plugins">Plugins</h2>
 <p>The following bindings become available by default once the relevant plugin is enabled in <code>wayfire.ini</code>.</p>
 <h3 id="change-opacity-by-scrolling-with-super-alt">Change opacity by scrolling with Super + Alt.</h3>
 <ul>
-<li><code>alpha.modifier</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;alt&gt;</kbd></li>
+<li><code>alpha.modifier</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-alt">Alt</kbd></span></li>
 </ul>
 <h3 id="show-the-current-workspace-row-as-a-cube">Show the current workspace row as a cube.</h3>
 <ul>
-<li><code>cube.activate</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+<li><code>cube.activate</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <code>mouse-left</code></li>
 </ul>
 <h3 id="show-an-overview-of-all-workspaces">Show an overview of all workspaces.</h3>
 <ul>
-<li><code>expo.toggle</code> = <kbd>&lt;super&gt;</kbd></li>
+<li><code>expo.toggle</code> = <span class="keys"><kbd class="key-super">Super</kbd></span></li>
 </ul>
 <h3 id="select-a-workspace">Select a workspace.</h3>
 <p>Workspaces are arranged into a grid of 3 × 3. The numbering is left to right, line by line:</p>
@@ -1726,24 +1726,24 @@ h ⏎ l
 </code></pre></div>
 <p>See <code>core.vwidth</code> and <code>core.vheight</code> for configuring the grid.</p>
 <ul>
-<li><code>expo.select_workspace_1</code> = <kbd>1</kbd></li>
-<li><code>expo.select_workspace_2</code> = <kbd>2</kbd></li>
-<li><code>expo.select_workspace_3</code> = <kbd>3</kbd></li>
-<li><code>expo.select_workspace_4</code> = <kbd>4</kbd></li>
-<li><code>expo.select_workspace_5</code> = <kbd>5</kbd></li>
-<li><code>expo.select_workspace_6</code> = <kbd>6</kbd></li>
-<li><code>expo.select_workspace_7</code> = <kbd>7</kbd></li>
-<li><code>expo.select_workspace_8</code> = <kbd>8</kbd></li>
-<li><code>expo.select_workspace_9</code> = <kbd>9</kbd></li>
+<li><code>expo.select_workspace_1</code> = <span class="keys"><kbd class="key-1">1</kbd></span></li>
+<li><code>expo.select_workspace_2</code> = <span class="keys"><kbd class="key-2">2</kbd></span></li>
+<li><code>expo.select_workspace_3</code> = <span class="keys"><kbd class="key-3">3</kbd></span></li>
+<li><code>expo.select_workspace_4</code> = <span class="keys"><kbd class="key-4">4</kbd></span></li>
+<li><code>expo.select_workspace_5</code> = <span class="keys"><kbd class="key-5">5</kbd></span></li>
+<li><code>expo.select_workspace_6</code> = <span class="keys"><kbd class="key-6">6</kbd></span></li>
+<li><code>expo.select_workspace_7</code> = <span class="keys"><kbd class="key-7">7</kbd></span></li>
+<li><code>expo.select_workspace_8</code> = <span class="keys"><kbd class="key-8">8</kbd></span></li>
+<li><code>expo.select_workspace_9</code> = <span class="keys"><kbd class="key-9">9</kbd></span></li>
 </ul>
 <h3 id="simple-active-window-switcher">Simple active window switcher.</h3>
 <ul>
-<li><code>fast-switcher.activate</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;esc&gt;</kbd></li>
-<li><code>fast-switcher.activate_backward</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;esc&gt;</kbd></li>
+<li><code>fast-switcher.activate</code> = <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-escape">Esc</kbd></span></li>
+<li><code>fast-switcher.activate_backward</code> = <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-escape">Esc</kbd></span></li>
 </ul>
 <h3 id="fisheye-effect">Fisheye effect.</h3>
 <ul>
-<li><code>fisheye.toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;ctrl&gt;</kbd> + <kbd>F</kbd></li>
+<li><code>fisheye.toggle</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-f">F</kbd></span></li>
 </ul>
 <h3 id="grid">Grid.</h3>
 <p>Position the windows in certain regions of the output:</p>
@@ -1752,113 +1752,113 @@ h ⏎ l
 ⇱ ↓ ⇲ d │ 1 2 3 0
 </code></pre></div>
 <ul>
-<li><code>grid.slot_bl</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp1&gt;</kbd></li>
-<li><code>grid.slot_b</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp2&gt;</kbd></li>
-<li><code>grid.slot_br</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp3&gt;</kbd></li>
-<li><code>grid.slot_l</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;left&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp4&gt;</kbd></li>
-<li><code>grid.slot_c</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;up&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp5&gt;</kbd></li>
-<li><code>grid.slot_r</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;down&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp6&gt;</kbd></li>
-<li><code>grid.slot_tl</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp7&gt;</kbd></li>
-<li><code>grid.slot_t</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp8&gt;</kbd></li>
-<li><code>grid.slot_tr</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp9&gt;</kbd></li>
+<li><code>grid.slot_bl</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp1</code></li>
+<li><code>grid.slot_b</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp2</code></li>
+<li><code>grid.slot_br</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp3</code></li>
+<li><code>grid.slot_l</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-left">Left</kbd></span> | <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp4</code></li>
+<li><code>grid.slot_c</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-up">Up</kbd></span> | <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp5</code></li>
+<li><code>grid.slot_r</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-down">Down</kbd></span> | <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp6</code></li>
+<li><code>grid.slot_tl</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp7</code></li>
+<li><code>grid.slot_t</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp8</code></li>
+<li><code>grid.slot_tr</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>kp9</code></li>
 </ul>
 <p>Restore default.</p>
 <ul>
-<li><code>grid.restore</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;down&gt;</kbd> | <kbd>&lt;super&gt;</kbd> + <kbd>&lt;kp0&gt;</kbd></li>
+<li><code>grid.restore</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-down">Down</kbd></span> | <span class="keys"><kbd class="key-super">Super</kbd></span> + ++kp0++</li>
 </ul>
 <h3 id="invert-the-colors-of-the-whole-output">Invert the colors of the whole output.</h3>
 <ul>
-<li><code>invert.toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>I</kbd></li>
+<li><code>invert.toggle</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-i">I</kbd></span></li>
 </ul>
 <h3 id="drag-windows-by-holding-down-super-and-left-mouse-button">Drag windows by holding down Super and left mouse button</h3>
 <ul>
-<li><code>move.activate</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+<li><code>move.activate</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>mouse-left</code></li>
 </ul>
 <h3 id="change-focused-output">Change focused output.</h3>
 <p>Switch to the next output.</p>
 <ul>
-<li><code>oswitch.next_output</code> = <kbd>&lt;super&gt;</kbd> + <kbd>O</kbd></li>
+<li><code>oswitch.next_output</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-o">O</kbd></span></li>
 </ul>
 <p>Same with the window.</p>
 <ul>
-<li><code>oswitch.next_output_with_win</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>O</kbd></li>
+<li><code>oswitch.next_output_with_win</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-o">O</kbd></span></li>
 </ul>
 <h3 id="resize-window">Resize window.</h3>
 <ul>
-<li><code>resize.activate</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+<li><code>resize.activate</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>mouse-left</code></li>
 </ul>
 <h3 id="toggle-scaling">Toggle scaling.</h3>
 <ul>
-<li><code>scale.toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>P</kbd></li>
+<li><code>scale.toggle</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-p">P</kbd></span></li>
 </ul>
 <h3 id="sway-inspired-tiling">Sway-inspired tiling.</h3>
 <p>Toggle tiling mode.</p>
 <ul>
-<li><code>simple-tile.key_toggle</code> = <kbd>&lt;super&gt;</kbd> + <kbd>T</kbd></li>
+<li><code>simple-tile.key_toggle</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-t">T</kbd></span></li>
 </ul>
 <p>Move window.</p>
 <ul>
-<li><code>simple-tile.button_move</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-left&gt;</kbd></li>
+<li><code>simple-tile.button_move</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>mouse-left</code></li>
 </ul>
 <p>Resize window.</p>
 <ul>
-<li><code>simple-tile.button_resize</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;mouse-right&gt;</kbd></li>
+<li><code>simple-tile.button_resize</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <code>mouse-right</code></li>
 </ul>
 <p>Move focus to window on left.</p>
 <ul>
-<li><code>simple-tile.key_focus_left</code> = <kbd>&lt;super&gt;</kbd> + <kbd>H</kbd></li>
+<li><code>simple-tile.key_focus_left</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-h">H</kbd></span></li>
 </ul>
 <p>Move focus to window on right.</p>
 <ul>
-<li><code>simple-tile.key_focus_right</code> = <kbd>&lt;super&gt;</kbd> + <kbd>L</kbd></li>
+<li><code>simple-tile.key_focus_right</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-l">L</kbd></span></li>
 </ul>
 <p>Move focus to window above.</p>
 <ul>
-<li><code>simple-tile.key_focus_above</code> = <kbd>&lt;super&gt;</kbd> + <kbd>K</kbd></li>
+<li><code>simple-tile.key_focus_above</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-k">K</kbd></span></li>
 </ul>
 <p>Move focus to window below.</p>
 <ul>
-<li><code>simple-tile.key_focus_below</code> = <kbd>&lt;super&gt;</kbd> + <kbd>J</kbd></li>
+<li><code>simple-tile.key_focus_below</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-j">J</kbd></span></li>
 </ul>
 <h3 id="change-active-window-with-an-animation">Change active window with an animation.</h3>
 <ul>
-<li><code>switcher.next_view</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;tab&gt;</kbd></li>
-<li><code>switcher.prev_view</code> = <kbd>&lt;alt&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;tab&gt;</kbd></li>
+<li><code>switcher.next_view</code> = <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-tab">Tab</kbd></span></li>
+<li><code>switcher.prev_view</code> = <span class="keys"><kbd class="key-alt">Alt</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-tab">Tab</kbd></span></li>
 </ul>
 <h3 id="switch-to-workspace">Switch to workspace.</h3>
 <ul>
-<li><code>vswitch.binding_left</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;left&gt;</kbd></li>
-<li><code>vswitch.binding_down</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;down&gt;</kbd></li>
-<li><code>vswitch.binding_up</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;up&gt;</kbd></li>
-<li><code>vswitch.binding_right</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;right&gt;</kbd></li>
+<li><code>vswitch.binding_left</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-left">Left</kbd></span></li>
+<li><code>vswitch.binding_down</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-down">Down</kbd></span></li>
+<li><code>vswitch.binding_up</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-up">Up</kbd></span></li>
+<li><code>vswitch.binding_right</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-arrow-right">Right</kbd></span></li>
 </ul>
 <p>Move the focused window with the same key-bindings as above, but with Shift.</p>
 <ul>
-<li><code>vswitch.with_win_left</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;left&gt;</kbd></li>
-<li><code>vswitch.with_win_down</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;down&gt;</kbd></li>
-<li><code>vswitch.with_win_up</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;up&gt;</kbd></li>
-<li><code>vswitch.with_win_right</code> = <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;right&gt;</kbd></li>
+<li><code>vswitch.with_win_left</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-arrow-left">Left</kbd></span></li>
+<li><code>vswitch.with_win_down</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-arrow-down">Down</kbd></span></li>
+<li><code>vswitch.with_win_up</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-arrow-up">Up</kbd></span></li>
+<li><code>vswitch.with_win_right</code> = <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <span class="keys"><kbd class="key-arrow-right">Right</kbd></span></li>
 </ul>
 <h3 id="rotate-windows-with-the-mouse">Rotate windows with the mouse.</h3>
 <p>2D rotation.</p>
 <ul>
-<li><code>wrot.activate</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;ctrl&gt;</kbd> + <kbd>&lt;mouse-right&gt;</kbd></li>
+<li><code>wrot.activate</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <code>mouse-right</code></li>
 </ul>
 <p>3D rotation.</p>
 <ul>
-<li><code>wrot.activate-3d</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;shift&gt;</kbd> + <kbd>&lt;mouse-right&gt;</kbd></li>
+<li><code>wrot.activate-3d</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-shift">Shift</kbd></span> + <code>mouse-right</code></li>
 </ul>
 <p>Remove rotation of current view.</p>
 <ul>
-<li><code>wrot.reset-one</code> = <kbd>&lt;super&gt;</kbd> + <kbd>R</kbd></li>
+<li><code>wrot.reset-one</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-r">R</kbd></span></li>
 </ul>
 <p>Remove rotation of all views.</p>
 <ul>
-<li><code>wrot.reset</code> = <kbd>&lt;super&gt;</kbd> + <kbd>&lt;ctrl&gt;</kbd> + <kbd>R</kbd></li>
+<li><code>wrot.reset</code> = <span class="keys"><kbd class="key-super">Super</kbd></span> + <span class="keys"><kbd class="key-control">Ctrl</kbd></span> + <span class="keys"><kbd class="key-r">R</kbd></span></li>
 </ul>
 <h3 id="zoom-in-the-desktop-by-scrolling-super">Zoom in the desktop by scrolling + Super.</h3>
 <ul>
-<li><code>zoom.modifier</code> = <kbd>&lt;super&gt;</kbd></li>
+<li><code>zoom.modifier</code> = <span class="keys"><kbd class="key-super">Super</kbd></span></li>
 </ul>
 
 

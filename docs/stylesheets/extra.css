@@ -31,6 +31,9 @@
     vertical-align: middle;
     text-shadow: 0 0.02rem 0 rgba(0, 0, 0, 0.2);
 }
+.md-typeset hr {
+  border-bottom: 3px solid var(--md-default-fg-color--light);
+}
 
 /*
 [data-md-color-scheme="default"] {
